@@ -1,14 +1,9 @@
-import React from 'react'
-import { useState,useEffect } from 'react'
-import {useNavigate} from 'react-router-dom'
+import { useState, useEffect, React } from 'react'
+import { useNavigate } from 'react-router-dom'
 import axios from 'axios'
 import { CoinList } from '../Config/api';
 import { CryptoState } from '../Context';
-import { Container, Form,Row,Table,Pagination } from 'react-bootstrap';
-
-
-
-
+import { Container, Form, Row, Table, Pagination } from 'react-bootstrap';
 
 const CoinTable = () => {
 
@@ -16,9 +11,10 @@ const   [coins, setCoins] = useState([]);
 const  [loading, setLoading] = useState(false);
 const { currency } = CryptoState();
 const [search, setSearch] = useState("");
-
 const navigate = useNavigate();
-
+const [page, setPage] = useState(1);
+  
+  
 const formatCurrency = (value) => {
   return new Intl.NumberFormat('en-US', {
     style: 'currency',
@@ -26,13 +22,6 @@ const formatCurrency = (value) => {
     minimumFractionDigits: 2
   }).format(value);
 }
-
-
-
-const [page, setPage] = useState(1);
-
-
-
 
 
   const getCoins = async () => {
@@ -54,7 +43,7 @@ const [page, setPage] = useState(1);
 
   return (
       <>
-    <h3 className='text-center'>cryptocurrency Prices By Market Cap</h3>
+    <h3 className='text-center'>Cryptocurrency Prices By Market Cap</h3>
     <Container>
       <Row>
     <Form.Control  className='text-center-2'
