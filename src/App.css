@@ -1,38 +1,87 @@
-.App {
-  text-align: center;
-}
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;1,400;1,700&display=swap');
+@import 'bootstrap/dist/css/bootstrap.min.css';
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
+* {
+  font-family: 'Poppins', sans-serif !important;
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
 
-.App-header {
-  background-color: #282c34;
+}
+body {
+  background-color: #14161a;
+  color:white;
   min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+/* still working on styling button onClick  */
+
+.btn:hover {
+  background: #019267;
+  outline: none;
+}
+.btn {
+  background: #00C897 ;
+  border: none;
+  outline: none;
+  --bs-btn-active-bg: #019267;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.Brand {
+  font-weight: 500;
+}
+.Select {
+  cursor: pointer;
+}
+
+.Col-1 {
+  padding-bottom: 110px;
+
+}
+.Heading1 {
+  font-size: 62px;
+  font-weight: 700;
+  line-height: 1.5;
+  color: rgb(157, 155, 153);
+  padding-top: 120px;
+}
+
+.Heading2 {
+  font-size: 20px;
+  line-height: 1.4;
+  color: rgb(157, 155, 153);
+  font-weight: 700;
+  margin-bottom: 32px;
+}
+
+.input-1 {
+  background-color: #14161a;
+  width: 80% !important;
+  padding: 10px;
+}
+
+.submit-btn {
+  margin-top: 20px;
+  padding: 15px;
+}
+.img-1 {
+  padding-top: 90px;
+  cursor: pointer;
+}
+.text-center {
+  color: rgb(157, 155, 153);
+  font-size: 30px;
+  font-weight:700;
+  padding: 30px;
+}
+.text-center-2 {
+  margin-bottom: 30px;
+  
+}
+
+.tab {
+  cursor: pointer;
 }
