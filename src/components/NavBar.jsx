@@ -18,31 +18,31 @@ const Navigationbar = () => {
             <Container>
               <Navbar.Brand className='Brand' as={Link} to="/">
               <img
-              alt=""
-              src={img}
-              width="30"
-              height="30"
-              className="d-inline-block align-top"
-            />{' '}
+                  alt=""
+                  src={img}
+                  width="30"
+                  height="30"
+                  className="d-inline-block align-top"
+            />
             Coin Cap
               </Navbar.Brand>
-              <Navbar.Toggle aria-controls="responsive-navbar-nav" />
+                <Navbar.Toggle aria-controls="responsive-navbar-nav" />
               <Navbar.Collapse id="responsive-navbar-nav">
-              <Nav className="me-auto">
-                <Nav.Link as={Link} to="/NEWS">News</Nav.Link>
-                <Nav.Link as={Link} to="/NFT">NFT</Nav.Link>
-                <Nav.Link as={Link} to="/Exchange">Exchange</Nav.Link>
-              </Nav>
-              <Nav > 
-              <Button className='btn' >Login</Button>&nbsp;&nbsp;&nbsp;&nbsp;
-              <Form.Select aria-label="Default select example" className='Select'
-              value={currency}
-              onChange={(e) => setCurrency(e.target.value)}
-              >
-            <option value="USD">USD</option>
-            <option value="EUR">EUR</option>
-            </Form.Select>
-              </Nav>
+                <Nav className="me-auto">
+                    <Nav.Link as={Link} to="/NEWS">News</Nav.Link>
+                    <Nav.Link as={Link} to="/NFT">NFT</Nav.Link>
+                    <Nav.Link as={Link} to="/Exchange">Exchange</Nav.Link>
+                </Nav>
+                <Nav > 
+                  <Button className='btn' >Login</Button>&nbsp;&nbsp;&nbsp;&nbsp;
+                  <Form.Select aria-label="Default select example" className='Select'
+                    value={currency}
+                    onChange={(e) => setCurrency(e.target.value)}
+                  >
+                    <option value="USD">USD</option>
+                    <option value="EUR">EUR</option>
+                    </Form.Select>
+                </Nav>
               </Navbar.Collapse>
             </Container>
           </Navbar>

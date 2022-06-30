@@ -7,12 +7,12 @@ import { Container, Form, Row, Table, Pagination } from 'react-bootstrap';
 
 const CoinTable = () => {
 
-const   [coins, setCoins] = useState([]);
+const  [coins, setCoins] = useState([]);
 const  [loading, setLoading] = useState(false);
-const { currency } = CryptoState();
-const [search, setSearch] = useState("");
-const navigate = useNavigate();
-const [page, setPage] = useState(1);
+const  { currency } = CryptoState();
+const  [search, setSearch] = useState("");
+const  navigate = useNavigate();
+const  [page, setPage] = useState(1);
   
   
 const formatCurrency = (value) => {
@@ -25,7 +25,7 @@ const formatCurrency = (value) => {
 
 
   const getCoins = async () => {
-    setLoading(true);
+      setLoading(true);
       const { data } = await axios.get(CoinList(currency));
       setCoins(data);
       setLoading(false);
@@ -46,14 +46,14 @@ const formatCurrency = (value) => {
     <h3 className='text-center'>Cryptocurrency Prices By Market Cap</h3>
     <Container>
       <Row>
-    <Form.Control  className='text-center-2'
-          placeholder="Search For A cryptocurrency"
-          autoComplete="off" autoCorrect="off" autoCapitalize="off"
-          onChange={(e) => setSearch(e.target.value)}
+        <Form.Control  className='text-center-2'
+            placeholder="Search For a Cryptocurrency"
+            autoComplete="off" autoCorrect="off" autoCapitalize="off"
+            onChange={(e) => setSearch(e.target.value)}
         /> 
       </Row>
 
-      <Row>
+      
         <Table responsive  striped bordered hover variant="dark" className='tab'>
           <thead>
             <tr>
@@ -65,23 +65,22 @@ const formatCurrency = (value) => {
           </thead>
           <tbody>
           
-            {handleChange()
-              .slice((page - 1) * 10, page * 10) 
-            .map(coin => (
-              <tr key={coin.id} 
-              onClick={() => navigate(`/Coin/${coin.id}`)}>
-              
-                <td><img 
-                src={coin.image}
-                alt={coin.name}
-                style={{width: 35, height: 35, margin:5, padding:1}}></img>
-                {coin.symbol.toUpperCase()} 
+              {handleChange()
+                .slice((page - 1) * 10, page * 10) 
+              .map(coin => (
+                <tr key={coin.id} 
+                onClick={() => navigate(`/Coin/${coin.id}`)}>
+                <td>
+                  <img 
+                    src={coin.image}
+                    alt={coin.name}
+                    style={{width: 35, height: 35, margin:5, padding:1}}></img>
+                    {coin.symbol.toUpperCase()} 
                 </td>
                 <td>{formatCurrency(coin.current_price)}</td>
                 <td>
                   <span className={coin.price_change_percentage_24h > 0 ? "text-success" : "text-danger"}>
-                  
-                  {formatCurrency(coin.price_change_percentage_24h)}%
+                      {formatCurrency(coin.price_change_percentage_24h)}%
                   </span>
                 </td>
                 <td>{formatCurrency(coin.market_cap)}</td>
@@ -89,7 +88,7 @@ const formatCurrency = (value) => {
             ))}
           </tbody>
         </Table>
-      </Row>
+      
           <Pagination className='justify-content-center'>
             <Pagination.First onClick={() => setPage(1)} />
             <Pagination.Prev onClick={() => setPage(page - 1)} />
@@ -101,9 +100,9 @@ const formatCurrency = (value) => {
             <Pagination.Next onClick={() => setPage(page + 1)} />
             <Pagination.Last onClick={() => setPage(5)} />
           </Pagination>
-      </Container>
+        </Container>
       </>
   );
 }
 
-export default CoinTable
+export default CoinTable;

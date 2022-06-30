@@ -1,26 +1,26 @@
 import './App.css';
 import React from 'react'
 import Navigationbar from './components/NavBar';
-import { Routes , Route } from "react-router-dom";
+import { Routes , Route, Link } from "react-router-dom";
 import NFT from './components/NFT';
 import Exchange from './components/Exchange';
 import News from './components/News';
-import Home from './pages/Home';
 import coins from "./pages/Coin";
-
+import Banner from "./components/Banner/Banner.jsx"
+import Table from "./components/CoinTable"
 
 
 function App() {
   return (
       <div className="App">
         <Navigationbar />
-        <Home/>
+        <Banner/>
+        <Table/>
         <>
             <Routes>
               <Route path="/NFT" element={<NFT />} />
               <Route path="/Exchange" element={<Exchange />} />
               <Route path="/News" element={<News />} />
-              <Route path="/" element={Home} exact />
               <Route path="/coins/:id" element={coins} exact />
             </Routes>
             </>

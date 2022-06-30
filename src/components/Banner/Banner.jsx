@@ -6,20 +6,20 @@ import eth from '../Banner/eth.png'
 const Banner = () => {
   return (
     <div >
-      <Container fluid="md">
-      <Row>
-        <Col className='Col-1'>
-        <h1 className='Heading1'>Jump start your crypto portfolio</h1>
-        <h3 className='Heading2'>Coin Cap is the easiest place to buy and sell cryptocurrency. Sign up and get started today.</h3>
+        <Container fluid="md">
+          <Row>
+            <Col className='Col-1'>
+            <h1 className='Heading1'>Jump start your crypto portfolio</h1>
+            <h3 className='Heading2'>Coin Cap is the easiest place to buy and sell cryptocurrency. Sign up and get started today.</h3>
         
-        <Form.Control  className='input-1'
-          aria-label="Example text with button addon"
-          placeholder="Enter Your Email"
-          
-          autoComplete="off" autoCorrect="off" autoCapitalize="off"
+          <Form.Control  className='input-1'
+            aria-label="Example text with button addon"
+            placeholder="Enter Your Email"
+            
+            autoComplete="off" autoCorrect="off" autoCapitalize="off"
         /> 
           <Button as="input" type="submit" value="Get Started" className='submit-btn' />
-        </Col>
+          </Col>
         
         <Col>
         <img src={eth} className='img-1' alt=""/>
@@ -27,7 +27,7 @@ const Banner = () => {
         
       </Row>
       
-    </Container>
+      </Container>
     </div>
   );
     
