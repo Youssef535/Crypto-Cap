@@ -67,7 +67,7 @@ const formatCurrency = (value) => {
           
               {handleChange()
                 .slice((page - 1) * 10, page * 10) 
-              .map(coin => (
+                .map(coin => (
                 <tr key={coin.id} 
                 onClick={() => navigate(`/Coin/${coin.id}`)}>
                 <td>
