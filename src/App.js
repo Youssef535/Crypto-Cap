@@ -1,7 +1,7 @@
 import './App.css';
 import React from 'react';
 import Navigationbar from './components/NavBar';
-import { Routes , Route, BrowserRouter as Router } from "react-router-dom";
+import { Routes , Route, Link, BrowserRouter as Router } from "react-router-dom";
 import NFT from './components/NFT';
 import Exchange from './components/Exchange';
 import News from './components/News';
@@ -18,17 +18,22 @@ function App() {
         <Banner/>
         <Table/>
           <>
+          
             <Routes>
+          
                 <Route path="/NFT" element={<NFT />} />
                 <Route path="/Exchange" element={<Exchange />} />
                 <Route path="/News" element={<News />} />
                 <Route path="/coins/:id" element={coins} exact />
+
             </Routes>
+          
           </>
       </div>
-    </Router>
+      </Router>
   );
 }
+
 
 
 export default App;
