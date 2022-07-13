@@ -1,6 +1,6 @@
 import {React} from 'react'
 import {Container, Navbar, Nav, Button, Form} from 'react-bootstrap';
-import { Link } from "react-router-dom";
+import { Link, Outlet } from "react-router-dom";
 import img from '../assets/images/logo.jpg'
 import { CryptoState } from '../Context';
 
@@ -32,6 +32,7 @@ const Navigationbar = () => {
                     <Nav.Link as={Link} to="/News">News</Nav.Link>
                     <Nav.Link as={Link} to="/NFT">NFT</Nav.Link>
                     <Nav.Link as={Link} to="/Exchange">Exchange</Nav.Link>
+                    
                 </Nav>
                 <Nav > 
                   <Button className='btn' >Login</Button>&nbsp;&nbsp;&nbsp;&nbsp;
