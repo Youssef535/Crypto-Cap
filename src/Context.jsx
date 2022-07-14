@@ -1,7 +1,6 @@
 import React, { createContext, useContext, useEffect, useState } from "react";
 
 
-
   const Crypto = createContext();
   const Context = ({ children }) => {
   const [currency, setCurrency] = useState("USD");

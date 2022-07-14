@@ -5,12 +5,6 @@ import NavRoutes from '../src/components/Routes'
 
 
 
-
-
-
-
-
-
 function App() {
   return (
     
@@ -23,7 +17,5 @@ function App() {
     
   );
 }
-
-
 
 export default App;
