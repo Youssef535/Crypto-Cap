@@ -7,10 +7,10 @@ import { CryptoState } from '../Context'
 const Coin = () => {
 
   const params = useParams()
-  const [coin, setCoin] = useState({})
+  const [coin, setCoin] = useState([])
 
   const url = `https://api.coingecko.com/api/v3/coins/${params.id}`
-  const  {currency, symbol } = CryptoState();
+  const  {currency,symbol} = CryptoState();
 
   const formatCurrency = (value) => {
     return new Intl.NumberFormat('en-US', {
@@ -19,7 +19,7 @@ const Coin = () => {
       minimumFractionDigits: 2
     }).format(value);
   }
-  
+  console.log(coin);
   useEffect(() => {
       axios.get(url).then((res) => {
           setCoin(res.data)
@@ -45,12 +45,12 @@ const Coin = () => {
                 {coin.symbol ? <p>{coin.symbol.toUpperCase()}</p> : null}
               </div>
               <div className='coin-price'>
-                <p>Price: {coin.current_price} {symbol}</p>
-                
+
+              {coin.market_data?.current_price ? <h1>${coin.market_data.current_price.usd.toLocaleString()}</h1> : null}
+              
               </div>
             </div>
           </div>
-
         </div>
 
     </div>

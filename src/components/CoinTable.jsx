@@ -11,10 +11,8 @@ const  [coins, setCoins] = useState([]);
 const  [loading, setLoading] = useState(false);
 const  { currency } = CryptoState();
 const  [search, setSearch] = useState("");
-const  navigate = useNavigate();
 const  [page, setPage] = useState(1);
-
-  
+const  navigate = useNavigate();
 const formatCurrency = (value) => {
   return new Intl.NumberFormat('en-US', {
     style: 'currency',
