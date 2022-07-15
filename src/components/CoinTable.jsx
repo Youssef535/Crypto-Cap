@@ -60,7 +60,7 @@ const formatCurrency = (value) => {
               <th>Coin</th>
               <th>Price</th>
               <th>24H Change</th>
-              <th>Market Cap</th>
+              <th className='hide-mobile'>Market Cap</th>
             </tr>
           </thead>
           <tbody>
@@ -83,7 +83,7 @@ const formatCurrency = (value) => {
                       {formatCurrency(coin.price_change_percentage_24h)}%
                   </span>
                 </td>
-                <td>{formatCurrency(coin.market_cap)}</td>
+                <td className='hide-mobile'>{formatCurrency(coin.market_cap)}</td>
               </tr>
             ))}
           </tbody>

@@ -19,7 +19,7 @@ const fetchCoin = async () => {
   setCoin(response);
 };
 
-console.log(coin);
+
 
   useEffect(() => {
     fetchCoin();
@@ -29,12 +29,6 @@ console.log(coin);
 
   return (
     <div>
-      <h2>Working on the coin page </h2>
-      <>
-          {coin.data.coingecko_rank}
-          {coin.data.name}
-          {coin.data.symbol}
-      </>
       
     </div>
 

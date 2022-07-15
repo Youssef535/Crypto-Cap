@@ -68,8 +68,9 @@ body {
   padding: 15px;
 }
 .img-1 {
-  padding-top: 90px;
+  padding: 150px 0 0 90px;
   cursor: pointer;
+  width: 400px;
 }
 .text-center {
   color: rgb(157, 155, 153);
@@ -81,8 +82,18 @@ body {
   margin-bottom: 30px;
   
 }
-
 .tab {
   cursor: pointer;
 }
+@media screen and (max-width: 720px) {
+  .hide-mobile {
+      display: none;
+  }
+}
 
+@media screen and (max-width: 720px) {
+  .img-1 {
+      padding: 0;
+      width: 300px;
+  }
+}

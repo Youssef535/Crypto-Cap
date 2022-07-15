@@ -1,6 +1,7 @@
 import React from 'react'
 import {Row,Col,Container,Form,Button} from 'react-bootstrap';
-import eth from '../Banner/eth.png'
+import img from './logo.jpg';
+
 
 
 const Banner = () => {
@@ -22,7 +23,7 @@ const Banner = () => {
           </Col>
         
         <Col>
-        <img src={eth} className='img-1' alt=""/>
+        <img src={img} className='img-1' alt=""/>
         </Col>
         
       </Row>
