@@ -22,16 +22,16 @@ const fetchCoin = async () => {
 
 
   useEffect(() => {
-    fetchCoin();
+    fetchCoin().catch(err => console.log(err));
   },[]);
 
 
 
   return (
-    <div>
+      <>
+      <h1>single coin application</h1>
       
-    </div>
-
+      </>
   )
 
 };
