@@ -12,6 +12,14 @@ const Coin = () => {
   const url = `https://api.coingecko.com/api/v3/coins/${params.id}`
   const  {currency, symbol } = CryptoState();
 
+  const formatCurrency = (value) => {
+    return new Intl.NumberFormat('en-US', {
+      style: 'currency',
+      currency: currency,
+      minimumFractionDigits: 2
+    }).format(value);
+  }
+  
   useEffect(() => {
       axios.get(url).then((res) => {
           setCoin(res.data)

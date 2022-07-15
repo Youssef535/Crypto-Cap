@@ -96,3 +96,9 @@ body {
       width: 300px;
   }
 }
+
+@media screen and (max-width: 720px) {
+  .Col-1 {
+      padding-bottom: 70px;
+  }
+}
