@@ -54,8 +54,8 @@ const Coin = () => {
                                 <th>24h</th>
                                 <th>7d</th>
                                 <th>14d</th>
-                                <th>30d</th>
-                                <th>1yr</th>
+                                <th className='hide-mobile'>30d</th>
+                                <th className='hide-mobile'>1yr</th>
                             </tr>
                         </thead>
                         <tbody>
@@ -64,11 +64,16 @@ const Coin = () => {
                                 <td>{coin?.market_data.price_change_percentage_24h_in_currency[currency.toLowerCase()].toFixed(2)}%</td>
                                 <td>{coin?.market_data.price_change_percentage_7d_in_currency[currency.toLowerCase()].toFixed(2)}%</td>
                                 <td>{coin?.market_data.price_change_percentage_14d_in_currency[currency.toLowerCase()].toFixed(2)}%</td>
-                                <td>{coin?.market_data.price_change_percentage_30d_in_currency[currency.toLowerCase()].toFixed(2)}%</td>
-                                <td>{coin?.market_data.price_change_percentage_1y_in_currency[currency.toLowerCase()].toFixed(2)}%</td>
+                                <td className='hide-mobile'>{coin?.market_data.price_change_percentage_30d_in_currency[currency.toLowerCase()].toFixed(2)}%</td>
+                                <td className='hide-mobile'>{coin?.market_data.price_change_percentage_1y_in_currency[currency.toLowerCase()].toFixed(2)}%</td>
                             </tr>
                         </tbody>
                     </table>
+            </div>
+            <div className='content'>
+                <div className='stats'>
+                    
+                </div>
             </div>
         </div>
     </div>
