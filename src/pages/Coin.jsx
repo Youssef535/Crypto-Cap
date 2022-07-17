@@ -4,7 +4,7 @@ import React, { useState, useEffect } from 'react'
 import './Coin.css'
 import { CryptoState } from '../Context'
 import { SingleCoin } from '../Config/api'
-import { Table } from 'react-bootstrap'
+
 
 const Coin = () => {
 
