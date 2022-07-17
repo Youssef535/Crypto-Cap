@@ -35,16 +35,15 @@ const Coin = () => {
               </div>
               <div className="info">
                 <div className='coin-heading'>
-
-                <img src={coin?.image.small} alt={coin?.name} />
-                <p>{coin.name}</p>
-                {coin.symbol ? <p>{coin.symbol.toUpperCase()}</p> : null}
+                    <img src={coin?.image.small} alt={coin?.name} />
+                    <p>{coin.name}</p>
+                    {coin.symbol ? <p>{coin.symbol.toUpperCase()}</p> : null}
+                  </div>
+                  <div className='coin-price'>
+                  {symbol}{" "}
+                  { coin?.market_data.current_price[currency.toLowerCase()].toFixed(2)}
                 </div>
-              </div>
-              <div className='coin-price'>
-              {symbol}{" "}
-              { coin?.market_data.current_price[currency.toLowerCase()].toFixed(2)}
-              </div>
+                </div>
             </div>
         </div>
     </div>
