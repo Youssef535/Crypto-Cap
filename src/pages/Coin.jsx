@@ -73,6 +73,7 @@ const Coin = () => {
             <div className='content'>
                 <div className='stats'>
                     
+                    
                 </div>
             </div>
         </div>
