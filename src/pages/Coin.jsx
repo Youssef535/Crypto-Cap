@@ -4,7 +4,7 @@ import React, { useState, useEffect } from 'react'
 import './Coin.css'
 import { CryptoState } from '../Context'
 import { SingleCoin } from '../Config/api'
-
+import { Container,Col,Row,Table } from 'react-bootstrap'
 
 const Coin = () => {
 
@@ -23,8 +23,10 @@ const Coin = () => {
     fetchCoin();
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
+  
   if (!coin) return <div>Loading...</div>;
   return (
+    <Container>
     <div>
         <div className='coin-container'>
               <div className='coin-header'>
@@ -47,7 +49,7 @@ const Coin = () => {
               </div>
             </div>
             <div className='content'>
-            <table>
+            <Table striped bordered hover variant="dark">
                         <thead>
                             <tr>
                                 <th>1h</th>
@@ -68,16 +70,27 @@ const Coin = () => {
                                 <td className='hide-mobile'>{coin?.market_data.price_change_percentage_1y_in_currency[currency.toLowerCase()].toFixed(2)}%</td>
                             </tr>
                         </tbody>
-                    </table>
+                    </Table>
             </div>
             <div className='content'>
                 <div className='stats'>
-                    
-                    
+                    <Col>
+                    <Row>
+                        <h4>24 Hour Low</h4>
+                        {coin?.market_data.low_24h[currency.toLowerCase()].toFixed(3)}
+                        {symbol}
+                    </Row>
+                    <Row>
+                        <h4>24 Hour Heigh</h4>
+                        {coin?.market_data.high_24h[currency.toLowerCase()].toFixed(3)}
+                        {symbol}
+                    </Row>
+                    </Col>
                 </div>
             </div>
         </div>
     </div>
+    </Container>
   )
 }
 

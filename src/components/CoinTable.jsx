@@ -23,10 +23,10 @@ const formatCurrency = (value) => {
 
 
   const getCoins = async () => {
-      setLoading(true);
+    setLoading(true);
       const { data } = await axios.get(CoinList(currency));
       setCoins(data);
-      setLoading(false);
+    setLoading(false);
   };
 
 
