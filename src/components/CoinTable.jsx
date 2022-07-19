@@ -5,6 +5,8 @@ import { CoinList } from '../Config/api';
 import { CryptoState } from '../Context';
 import { Container, Form, Row, Table, Pagination } from 'react-bootstrap';
 
+
+
 const CoinTable = () => {
 
 const  [coins, setCoins] = useState([]);

@@ -6,6 +6,9 @@ import { CryptoState } from '../Context'
 import { SingleCoin } from '../Config/api'
 import { Container,Col,Row,Table } from 'react-bootstrap'
 
+// AS YOU SEE WE NEED TO FORMAT OUR NUMBERS  WE HAVE MANY OPTIONS WE IMPORT FORMAT_CURENCY OR
+// WE CAN MAKE A FUNCTION USING REGX 
+
 const Coin = () => {
 
   const { id } = useParams();
@@ -74,18 +77,33 @@ const Coin = () => {
             </div>
             <div className='content'>
                 <div className='stats'>
+                  <div className="left">
                     <Col>
-                    <Row>
-                        <h4>24 Hour Low</h4>
-                        {coin?.market_data.low_24h[currency.toLowerCase()].toFixed(3)}
-                        {symbol}
-                    </Row>
-                    <Row>
-                        <h4>24 Hour Heigh</h4>
-                        {coin?.market_data.high_24h[currency.toLowerCase()].toFixed(3)}
-                        {symbol}
-                    </Row>
+                        <Row>
+                            <h4>24 Hour Low</h4>
+                            {coin?.market_data.low_24h[currency.toLowerCase()].toFixed(3)}
+                            {symbol}
+                        </Row>
+                        <Row>
+                            <h4>24 Hour Heigh</h4>
+                            {coin?.market_data.high_24h[currency.toLowerCase()].toFixed(3)}
+                            {symbol}
+                        </Row>
                     </Col>
+                  </div>
+                  <div className='right'>
+                    <Col>
+                        <Row>
+                          <h4>Market Cap</h4>
+                          {coin?.market_data.market_cap[currency.toLowerCase()].toFixed(3).replace(/\d(?=(\d{3})+\.)/g, '$&,')}
+                          {symbol}
+                        </Row>
+                        <Row>
+                          <h4>Circulating Supply</h4>
+                          {coin?.market_data.circulating_supply.toFixed(3).replace(/\d(?=(\d{3})+\.)/g, '$&,')}
+                        </Row>
+                    </Col>
+                  </div>
                 </div>
             </div>
         </div>
