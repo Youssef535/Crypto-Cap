@@ -5,6 +5,7 @@ import './Coin.css'
 import { CryptoState } from '../Context'
 import { SingleCoin } from '../Config/api'
 import { Container,Col,Row,Table } from 'react-bootstrap'
+import DOMPurify from 'dompurify'
 
 // AS YOU SEE WE NEED TO FORMAT OUR NUMBERS  WE HAVE MANY OPTIONS WE IMPORT FORMAT_CURENCY OR
 // WE CAN MAKE A FUNCTION USING REGX 
@@ -47,7 +48,7 @@ const Coin = () => {
                 </div>
                 <div className='coin-price'>
                     {symbol}{" "}
-                    { coin?.market_data.current_price[currency.toLowerCase()].toFixed(2)}
+                    { coin?.market_data.current_price[currency.toLowerCase()]}
                 </div>
               </div>
             </div>
@@ -65,12 +66,12 @@ const Coin = () => {
                         </thead>
                         <tbody>
                             <tr>
-                                <td>{coin?.market_data.price_change_percentage_1h_in_currency[currency.toLowerCase()].toFixed(2)}%</td>
-                                <td>{coin?.market_data.price_change_percentage_24h_in_currency[currency.toLowerCase()].toFixed(2)}%</td>
-                                <td>{coin?.market_data.price_change_percentage_7d_in_currency[currency.toLowerCase()].toFixed(2)}%</td>
-                                <td>{coin?.market_data.price_change_percentage_14d_in_currency[currency.toLowerCase()].toFixed(2)}%</td>
-                                <td className='hide-mobile'>{coin?.market_data.price_change_percentage_30d_in_currency[currency.toLowerCase()].toFixed(2)}%</td>
-                                <td className='hide-mobile'>{coin?.market_data.price_change_percentage_1y_in_currency[currency.toLowerCase()].toFixed(2)}%</td>
+                                <td>{coin?.market_data.price_change_percentage_1h_in_currency[currency.toLowerCase()]}%</td>
+                                <td>{coin?.market_data.price_change_percentage_24h_in_currency[currency.toLowerCase()]}%</td>
+                                <td>{coin?.market_data.price_change_percentage_7d_in_currency[currency.toLowerCase()]}%</td>
+                                <td>{coin?.market_data.price_change_percentage_14d_in_currency[currency.toLowerCase()]}%</td>
+                                <td className='hide-mobile'>{coin?.market_data.price_change_percentage_30d_in_currency[currency.toLowerCase()]}%</td>
+                                <td className='hide-mobile'>{coin?.market_data.price_change_percentage_1y_in_currency[currency.toLowerCase()]}%</td>
                             </tr>
                         </tbody>
                     </Table>
@@ -81,32 +82,43 @@ const Coin = () => {
                     <Col>
                         <Row>
                             <h4>24 Hour Low</h4>
-                            {coin?.market_data.low_24h[currency.toLowerCase()].toFixed(3)}
-                            {symbol}
+                            {coin?.market_data.low_24h[currency.toLowerCase()]}
+                            {symbol}{''}
                         </Row>
                         <Row>
                             <h4>24 Hour Heigh</h4>
-                            {coin?.market_data.high_24h[currency.toLowerCase()].toFixed(3)}
-                            {symbol}
+                            {coin?.market_data.high_24h[currency.toLowerCase()]}
+                            {symbol} {''}
                         </Row>
                     </Col>
                   </div>
                   <div className='right'>
-                    <Col>
+                  <Col>
                         <Row>
                           <h4>Market Cap</h4>
-                          {coin?.market_data.market_cap[currency.toLowerCase()].toFixed(3).replace(/\d(?=(\d{3})+\.)/g, '$&,')}
-                          {symbol}
+                          {coin?.market_data.market_cap[currency.toLowerCase()]}
+                          {symbol} {''}
                         </Row>
                         <Row>
                           <h4>Circulating Supply</h4>
-                          {coin?.market_data.circulating_supply.toFixed(3).replace(/\d(?=(\d{3})+\.)/g, '$&,')}
+                          {coin?.market_data.circulating_supply[currency.toLowerCase()]}
+                          
                         </Row>
                     </Col>
                   </div>
                 </div>
             </div>
         </div>
+        <div className="content">
+        <div className='coin-description'>
+          <h3>About </h3>
+          <p dangerouslySetInnerHTML={{
+                __html: DOMPurify.sanitize(coin.description ? coin.description.en :
+            ''),
+            }}>
+          </p>
+          </div>
+      </div>
     </div>
     </Container>
   )
