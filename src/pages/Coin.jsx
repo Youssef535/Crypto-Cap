@@ -6,6 +6,7 @@ import { CryptoState } from '../Context'
 import { SingleCoin } from '../Config/api'
 import { Container,Col,Row,Table } from 'react-bootstrap'
 import DOMPurify from 'dompurify'
+import { numberWithCommas } from '../components/CoinTable'
 
 // AS YOU SEE WE NEED TO FORMAT OUR NUMBERS  WE HAVE MANY OPTIONS WE IMPORT FORMAT_CURENCY OR
 // WE CAN MAKE A FUNCTION USING REGX 
@@ -14,15 +15,13 @@ const Coin = () => {
 
   const { id } = useParams();
   const [coin, setCoin] = useState();
-
   const { currency, symbol } = CryptoState();
-
+  
   const fetchCoin = async () => {
     const { data } = await axios.get(SingleCoin(id));
 
     setCoin(data);
   };
-
   useEffect(() => {
     fetchCoin();
     // eslint-disable-next-line react-hooks/exhaustive-deps
@@ -48,7 +47,7 @@ const Coin = () => {
                 </div>
                 <div className='coin-price'>
                     {symbol}{" "}
-                    { coin?.market_data.current_price[currency.toLowerCase()]}
+                    { coin?.market_data.current_price[currency.toLowerCase()].toFixed(2)}
                 </div>
               </div>
             </div>
@@ -66,12 +65,12 @@ const Coin = () => {
                         </thead>
                         <tbody>
                             <tr>
-                                <td>{coin?.market_data.price_change_percentage_1h_in_currency[currency.toLowerCase()]}%</td>
-                                <td>{coin?.market_data.price_change_percentage_24h_in_currency[currency.toLowerCase()]}%</td>
-                                <td>{coin?.market_data.price_change_percentage_7d_in_currency[currency.toLowerCase()]}%</td>
-                                <td>{coin?.market_data.price_change_percentage_14d_in_currency[currency.toLowerCase()]}%</td>
-                                <td className='hide-mobile'>{coin?.market_data.price_change_percentage_30d_in_currency[currency.toLowerCase()]}%</td>
-                                <td className='hide-mobile'>{coin?.market_data.price_change_percentage_1y_in_currency[currency.toLowerCase()]}%</td>
+                                <td>{coin?.market_data.price_change_percentage_1h_in_currency[currency.toLowerCase()].toFixed(1)}%</td>
+                                <td>{coin?.market_data.price_change_percentage_24h_in_currency[currency.toLowerCase()].toFixed(1)}%</td>
+                                <td>{coin?.market_data.price_change_percentage_7d_in_currency[currency.toLowerCase()].toFixed(1)}%</td>
+                                <td>{coin?.market_data.price_change_percentage_14d_in_currency[currency.toLowerCase()].toFixed(1)}%</td>
+                                <td className='hide-mobile'>{coin?.market_data.price_change_percentage_30d_in_currency[currency.toLowerCase()].toFixed(2)}%</td>
+                                <td className='hide-mobile'>{coin?.market_data.price_change_percentage_1y_in_currency[currency.toLowerCase()].toFixed(2)}%</td>
                             </tr>
                         </tbody>
                     </Table>
@@ -82,12 +81,12 @@ const Coin = () => {
                     <Col>
                         <Row>
                             <h4>24 Hour Low</h4>
-                            {coin?.market_data.low_24h[currency.toLowerCase()]}
+                            {coin?.market_data.low_24h[currency.toLowerCase()].toFixed(2)}
                             {symbol}{''}
                         </Row>
                         <Row>
                             <h4>24 Hour Heigh</h4>
-                            {coin?.market_data.high_24h[currency.toLowerCase()]}
+                            {coin?.market_data.high_24h[currency.toLowerCase()].toFixed(2)}
                             {symbol} {''}
                         </Row>
                     </Col>
@@ -96,12 +95,12 @@ const Coin = () => {
                   <Col>
                         <Row>
                           <h4>Market Cap</h4>
-                          {coin?.market_data.market_cap[currency.toLowerCase()]}
+                          {numberWithCommas( coin?.market_data.market_cap[currency.toLowerCase()])}
                           {symbol} {''}
                         </Row>
                         <Row>
                           <h4>Circulating Supply</h4>
-                          {coin?.market_data.circulating_supply[currency.toLowerCase()]}
+                          {coin?.market_data.circulating_supply.toLocaleString()}
                           
                         </Row>
                     </Col>
