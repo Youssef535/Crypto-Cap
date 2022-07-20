@@ -31,7 +31,7 @@ const Coin = () => {
   return (
     <Container>
     <div>
-        <div className='coin-container'>
+        <div className='container'>
               <div className='coin-header'>
                 <h1>{coin?.name}</h1>
               </div>
@@ -106,7 +106,7 @@ const Coin = () => {
                     </Col>
                   </div>
                 </div>
-            </div>
+              </div>
         </div>
         <div className="content">
         <div className='coin-description'>
