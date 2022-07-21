@@ -18,3 +18,27 @@
   border-radius: 8px;
   background-color: #00C897;
 }
+.info {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+.info .coin-heading {
+  display: flex;
+  align-items: center;
+  margin: 1rem 0;
+}
+.info .coin-heading img {
+  margin: 5px;
+}
+.info .coin-price {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.info p {
+  padding-right: 1rem;
+}
+h1 {
+  text-align: center;
+}

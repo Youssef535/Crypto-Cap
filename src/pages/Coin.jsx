@@ -38,7 +38,7 @@ const Coin = () => {
               </div>
             <div className='content'>
               <div className='coin-rank'>
-                  <span className='rank-btn'>Rank: {coin?.market_cap_rank}</span>
+                  <span className='rank-btn'>Rank : {coin?.market_cap_rank}</span>
               </div>
               <div className="info">
                 <div className='coin-heading'>
@@ -48,7 +48,7 @@ const Coin = () => {
                 </div>
                 <div className='coin-price'>
                     {symbol}{" "}
-                    { coin?.market_data.current_price[currency.toLowerCase()].toFixed(2)}
+                    <h2>{ coin?.market_data.current_price[currency.toLowerCase()].toFixed(2)}</h2>
                 </div>
               </div>
             </div>
