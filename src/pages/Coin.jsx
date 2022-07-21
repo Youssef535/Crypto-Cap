@@ -37,7 +37,7 @@ const Coin = () => {
               </div>
             <div className='content'>
               <div className='coin-rank'>
-                  <h3>Rank: {coin?.market_cap_rank}</h3>
+                  <span className='rank-btn'>Rank: {coin?.market_cap_rank}</span>
               </div>
               <div className="info">
                 <div className='coin-heading'>
