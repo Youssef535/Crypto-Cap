@@ -1,0 +1,20 @@
+.container .content {
+  max-width: 740px;
+  margin: 1rem auto;
+  padding: .7rem 1rem;
+  display: flex;
+  flex-direction: column;
+  background-color: #26272b;
+  box-shadow: 0px 0px 12px #18191b;
+  border-radius: 8px;
+}
+.coin-rank {
+  margin: .5rem 0;
+}
+.rank-btn {
+  border: 1px solid #00C897;
+  padding: .2rem;
+  box-shadow: 0px 0px 8px #00C897;
+  border-radius: 8px;
+  background-color: #00C897;
+}

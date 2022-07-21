@@ -7,6 +7,7 @@ import { SingleCoin } from '../Config/api'
 import { Container,Col,Row,Table } from 'react-bootstrap'
 import DOMPurify from 'dompurify'
 import { numberWithCommas } from '../components/CoinTable'
+import './Coin.css'
 
 // AS YOU SEE WE NEED TO FORMAT OUR NUMBERS  WE HAVE MANY OPTIONS WE IMPORT FORMAT_CURENCY OR
 // WE CAN MAKE A FUNCTION USING REGX 
@@ -32,7 +33,7 @@ const Coin = () => {
     <Container>
     <div>
         <div className='container'>
-              <div className='coin-header'>
+              <div className='content'>
                 <h1>{coin?.name}</h1>
               </div>
             <div className='content'>
