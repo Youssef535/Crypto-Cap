@@ -48,7 +48,7 @@ const Coin = () => {
                 </div>
                 <div className='coin-price'>
                     {symbol}{" "}
-                    <h2>{ coin?.market_data.current_price[currency.toLowerCase()].toFixed(2)}</h2>
+                    <h3>{ coin?.market_data.current_price[currency.toLowerCase()].toFixed(2)}</h3>
                 </div>
               </div>
             </div>
@@ -79,32 +79,32 @@ const Coin = () => {
             <div className='content'>
                 <div className='stats'>
                   <div className="left">
-                    <Col>
-                        <Row>
+                    
+                        <div className='row'>
                             <h4>24 Hour Low</h4>
                             {coin?.market_data.low_24h[currency.toLowerCase()].toFixed(2)}
                             {symbol}{''}
-                        </Row>
-                        <Row>
+                        </div>
+                        <div className='row'>
                             <h4>24 Hour Heigh</h4>
                             {coin?.market_data.high_24h[currency.toLowerCase()].toFixed(2)}
                             {symbol} {''}
-                        </Row>
-                    </Col>
+                        </div>
+                    
                   </div>
                   <div className='right'>
-                  <Col>
-                        <Row>
+                  
+                        <div className='row'>
                           <h4>Market Cap</h4>
                           {numberWithCommas( coin?.market_data.market_cap[currency.toLowerCase()])}
                           {symbol} {''}
-                        </Row>
-                        <Row>
+                        </div>
+                        <div className='row'>
                           <h4>Circulating Supply</h4>
                           {coin?.market_data.circulating_supply.toLocaleString()}
                           
-                        </Row>
-                    </Col>
+                        </div>
+                    
                   </div>
                 </div>
               </div>

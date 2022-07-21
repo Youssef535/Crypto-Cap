@@ -37,8 +37,25 @@ h1 {
   display: flex;
   align-items: center;
   justify-content: center;
+  font-weight: 600;
+  
+}
+.info .coin-price h3 {
+  font-weight: bold;
 }
 
 .info p {
   padding-right: 1rem;
+}
+.stats {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 2rem;
+  width: 100%;
+}
+.stats .row {
+  display: flex;
+  border-bottom: 1px solid #00C897;
+  margin: .6rem 0;
+  padding-bottom: .5rem;
 }
