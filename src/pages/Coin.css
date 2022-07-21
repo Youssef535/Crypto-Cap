@@ -1,3 +1,6 @@
+h1 {
+  text-align: center;
+}
 .container .content {
   max-width: 740px;
   margin: 1rem auto;
@@ -38,7 +41,4 @@
 
 .info p {
   padding-right: 1rem;
-}
-h1 {
-  text-align: center;
 }
