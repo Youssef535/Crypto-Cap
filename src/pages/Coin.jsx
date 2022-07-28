@@ -24,7 +24,6 @@ const Coin = () => {
   };
   useEffect(() => {
     fetchCoin();
-    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
   
   if (!coin) return <div>Loading...</div>;
