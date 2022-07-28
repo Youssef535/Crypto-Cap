@@ -1,13 +1,12 @@
 import axios from 'axios'
 import { useParams } from 'react-router-dom'
 import React, { useState, useEffect } from 'react'
-import './Coin.css'
 import { CryptoState } from '../Context'
 import { SingleCoin } from '../Config/api'
 import { Container,Table } from 'react-bootstrap'
 import DOMPurify from 'dompurify'
 import { numberWithCommas } from '../components/CoinTable'
-
+import './Coin.css'
 
 // AS YOU SEE WE NEED TO FORMAT OUR NUMBERS  WE HAVE MANY OPTIONS WE IMPORT FORMAT_CURENCY OR
 // WE CAN MAKE A FUNCTION USING REGX 
