@@ -1,6 +1,5 @@
-import React from 'react';
-import { useState, useEffect } from 'react';
-
+import { useState, useEffect, React } from 'react';
+import axios from 'axios';
 
 
 
@@ -8,7 +7,10 @@ import { useState, useEffect } from 'react';
 
 const news = () => {
   return (
-    <div>HERE YOU WILL FIND THE CYPTO NEWS ENJOY!</div>
+    <div>
+
+
+    </div>
   )
 }
 
