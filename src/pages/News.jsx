@@ -12,6 +12,17 @@ const News = () => {
   const [loading, setLoading] = useState(false);
   const [search, setSearch] = useState("");
   
+  const getNews = async () => {
+    setLoading(true);
+    const data = await axios.get(CoinNews);
+    setNews(data);
+    setLoading(false);
+  };
+  console.log(CoinNews);
+  useEffect(() => {
+    getNews();
+  },[]);
+
 
   return (
     <div>
