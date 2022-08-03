@@ -3,19 +3,34 @@ import axios from 'axios'
 import { Container,Card } from 'react-bootstrap'
 
 
-const CoinNews = 'https://newsdata.io/api/1/cryptoapikey=pub_9845a452909fd2b79e2b0482d2ccb749e7c0';
+const options = {
+  method: 'GET',
+  url: 'https://crypto-news-live3.p.rapidapi.com/news',
+  headers: {
+    'X-RapidAPI-Key': '2ab96d9ec9msh53ad8c155826209p15267ejsn9831b1935b52',
+    'X-RapidAPI-Host': 'crypto-news-live3.p.rapidapi.com'
+  }
+};
+
+axios.request(options).then(function (response) {
+	console.log(response.data);
+}).catch(function (error) {
+	console.error(error);
+});
+
 
 const News = () => {
 
   const [news, setNews] = useState([]);
-  const [loading, setLoading] = useState(false);
   const [search, setSearch] = useState("");
   
   
 
+  if (!news) return ("Loading...");
+
   return (
     <div>
-      <h1>news</h1>
+      <h1>{news.bitcoin}</h1>
     </div>  
   )
 }
