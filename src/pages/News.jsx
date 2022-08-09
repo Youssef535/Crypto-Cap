@@ -6,13 +6,11 @@ import { Container,Card } from 'react-bootstrap'
 
 
 
-
-
 const News = () => {
 
   const [news, setNews] = useState([]);
   const [search, setSearch] = useState("");
-  
+  const [loading, setLoading] = useState(false);
   
   return (
     <div>
