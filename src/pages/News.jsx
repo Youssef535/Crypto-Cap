@@ -21,12 +21,12 @@ axios.request(options).then(function (response) {
 
 const News = () => {
 
-  const [news, setNews] = useState([]);
+  
   return (
     <div>
       <h1>News Page </h1>
       <h4>Fetching api here for the news section</h4>
-      <h4>{news.image}</h4>
+      <h4>{title.image}</h4>
     </div>  
   )
 }
