@@ -83,6 +83,10 @@ body {
 .tab {
   cursor: pointer;
 }
+.link {
+  text-decoration: none;
+}
+
 @media screen and (max-width: 720px) {
   .hide-mobile {
       display: none;
@@ -100,7 +104,4 @@ body {
   .Col-1 {
       padding-bottom: 70px;
   }
-}
-.link {
-  text-decoration: none;
 }

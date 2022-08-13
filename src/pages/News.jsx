@@ -1,5 +1,5 @@
 import { useState, useEffect, React } from 'react';
-import { Container,Card,Col,Row } from 'react-bootstrap';
+import { Container,Card,Col,Row,Form,Pagination } from 'react-bootstrap';
 import axios from 'axios';
 
 
@@ -8,11 +8,11 @@ import axios from 'axios';
 const News = () => {
 
   const [news, setNews] = useState([]);
-  const [page, setPage] = useState(1);
   const [search, setSearch] = useState("");
-  
+  const [page, setPage] = useState(1);
+
   const newsAPI = async () =>{
-    let {data} = await axios.get('https://newsapi.org/v2/top-headlines?sources=techcrunch&apiKey=5fca490bd4d54b23a7143e2fbab1dea9');
+    let {data} = await axios.get('https://newsapi.org/v2/top-headlines?country=us&category=business&apiKey=5fca490bd4d54b23a7143e2fbab1dea9');
     // eslint-disable-next-line no-lone-blocks
     { /*console.log("news",data);*/ }
     setNews(data.articles);
@@ -22,9 +22,8 @@ const News = () => {
     //componentDidMount
     newsAPI();
   }, [])
-  if (!news) {
-    return <h1>Loading...</h1>;
-  }
+
+  
 
   return (
     <div>
@@ -32,6 +31,12 @@ const News = () => {
        {/* display all trending news  */}
       <Container>
         <Row>
+        <Form.Control  className='text-center-2'
+            placeholder="Search For The Last News "
+            autoComplete="off" autoCorrect="off" autoCapitalize="off"
+            onChange={(e) => setSearch(e.target.value)}
+            
+        /> 
           {news.map(news => (
             <Col key={news.title} md={4}>
               <Card className='bg-dark' style={{ margin:"10px", cursor:"pointer" }}>
@@ -39,6 +44,7 @@ const News = () => {
                 <Card.Body>
                   <Card.Title>{news.title}</Card.Title>
                   <Card.Text>
+                    {/* working with the news character */}
                     {news.description}
                   </Card.Text>
                   <Card.Link className='link' href={news.url}>Read More</Card.Link>
@@ -46,12 +52,12 @@ const News = () => {
               </Card>
             </Col>
           ))}
-        </Row>
-
+          </Row>
+          {/* Working on the pagination */}
       </Container>
       
     </div>  
-   
+
   )
 }
 
