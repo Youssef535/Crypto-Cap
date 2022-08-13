@@ -25,7 +25,7 @@ const News = () => {
 
   return (
     <div>
-      <h1>News Page </h1>
+      <h1>Last News  </h1>
        {/* display all trending news  */}
       <Container>
         <Row>
