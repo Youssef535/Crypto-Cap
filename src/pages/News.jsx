@@ -13,7 +13,7 @@ const News = () => {
 
   const newsAPI = async () =>{
     let {data} = await axios.get('https://newsapi.org/v2/top-headlines?sources=techcrunch&apiKey=5fca490bd4d54b23a7143e2fbab1dea9');
-    console.log("news",data);
+    { /*console.log("news",data);*/ }
     setNews(data.articles);
   }
 

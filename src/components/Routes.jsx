@@ -5,7 +5,7 @@ import NFT from "../pages/NFT";
 import Exchange from "../pages/Exchange";
 import Home from '../components/Home';
 import Coin from '../pages/Coin';
-import NotFound from '../Not Found 404/Error 404.jsx'
+import NotFound from '../components/NotFound/Error404';
 
 const NavRoutes = () =>
     <Routes>
