@@ -1,5 +1,5 @@
 import { useState, useEffect, React } from 'react';
-import { Container,Card,Col,Row,Form,Pagination } from 'react-bootstrap';
+import { Container,Card,Col,Row,Pagination,Button } from 'react-bootstrap';
 import axios from 'axios';
 
 
@@ -31,12 +31,7 @@ const News = () => {
        {/* display all trending news  */}
       <Container>
         <Row>
-        <Form.Control  className='text-center-2'
-            placeholder="Search For The Last News "
-            autoComplete="off" autoCorrect="off" autoCapitalize="off"
-            onChange={(e) => setSearch(e.target.value)}
-            
-        /> 
+        
           {news.map(news => (
             <Col key={news.title} md={4}>
               <Card className='bg-dark' style={{ margin:"10px", cursor:"pointer" }}>
@@ -47,7 +42,7 @@ const News = () => {
                     {/* working with the news character */}
                     {news.description}
                   </Card.Text>
-                  <Card.Link className='link' href={news.url}>Read More</Card.Link>
+                  <Button variant="primary" className='link' href={news.url}>Read More</Button>
                 </Card.Body>
               </Card>
             </Col>
