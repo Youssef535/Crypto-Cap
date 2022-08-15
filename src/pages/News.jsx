@@ -12,7 +12,7 @@ const News = () => {
   const [page, setPage] = useState(1);
 
   const newsAPI = async () =>{
-    let {data} = await axios.get('https://newsapi.org/v2/top-headlines?country=us&category=business&apiKey=5fca490bd4d54b23a7143e2fbab1dea9');
+    let {data} = await axios.get('https://newsapi.org/v2/top-headlines?country=us&apiKey=5fca490bd4d54b23a7143e2fbab1dea9');
     // eslint-disable-next-line no-lone-blocks
     { /*console.log("news",data);*/ }
     setNews(data.articles);
