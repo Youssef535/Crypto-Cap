@@ -1,18 +1,19 @@
 import { useState, useEffect, React } from 'react';
 import { Container,Card,Col,Row,Pagination,Button } from 'react-bootstrap';
 import axios from 'axios';
-
+import Scroll_Top from '../components/Scroll_Top';
 
 
 
 const News = () => {
 
   const [news, setNews] = useState([]);
-  
+  // Add a Pagination if you changed the api to crypto 
   const [page, setPage] = useState(1);
 
   const newsAPI = async () =>{
     // just change the api from top-headline to crypto the app is under development
+    // Please Visit newsapi.org
     let {data} = await axios.get('https://newsapi.org/v2/top-headlines?country=us&apiKey=5fca490bd4d54b23a7143e2fbab1dea9');
     // eslint-disable-next-line no-lone-blocks
     { /*console.log("news",data);*/ }
@@ -53,6 +54,8 @@ const News = () => {
           {/* Working on the pagination */}
       </Container>
       
+      <Scroll_Top />
+
     </div>  
 
   )
