@@ -36,10 +36,10 @@ const News = () => {
         
           {news.map(news => (
             <Col key={news.title} md={4}>
-              <Card className='bg-dark' style={{ margin:"10px", cursor:"pointer" }}>
+              <Card className='bg-dark ' style={{ margin:"10px", cursor:"pointer" }}>
                 <Card.Img variant="top" src={news.urlToImage}  />
                 <Card.Body>
-                  <Card.Title>{news.title}</Card.Title>
+                  <Card.Title>{news.title && news.title.length > 80 ? news.title.substring(0, 80) + "..." : news.title}</Card.Title>
                   <Card.Text>
                     {/* working with the news character */}
                     {news.description && news.description.length > 80 ? news.description.substring(0, 80) + "..." : news.description}

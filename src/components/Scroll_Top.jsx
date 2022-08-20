@@ -18,13 +18,14 @@ export default function App() {
         }}
         style={{
           position: 'fixed',
-          padding: '15px',
+          padding: '4px 15px',
           fontSize: '20px',
-          bottom: '40px',
+          bottom: '30px',
           right: '40px',
-          backgroundColor: '#00C897',
-          color: '#fff',
+          backgroundColor: '#fff',
+          color: '#4a4a4a',
           textAlign: 'center',
+          border: 'none',
         }}
       >
         <i><BsFillArrowUpSquareFill/></i>
