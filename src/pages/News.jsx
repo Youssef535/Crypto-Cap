@@ -8,7 +8,7 @@ import axios from 'axios';
 const News = () => {
 
   const [news, setNews] = useState([]);
-  // you can use page setpage for checking different pages
+  
   const [page, setPage] = useState(1);
 
   const newsAPI = async () =>{

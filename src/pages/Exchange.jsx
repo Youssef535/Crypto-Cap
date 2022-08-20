@@ -1,8 +1,12 @@
 import React from 'react'
 
+
+
+
+
 const Exchange = () => {
   return (
-    <div>HERE YOU WILL FIND THE EXCHANGE PART</div>
+    <h1>Exchange Market and rate </h1>
   )
 }
 
