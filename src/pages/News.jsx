@@ -8,10 +8,11 @@ import axios from 'axios';
 const News = () => {
 
   const [news, setNews] = useState([]);
-  const [search, setSearch] = useState("");
+  // you can use page setpage for checking different pages
   const [page, setPage] = useState(1);
 
   const newsAPI = async () =>{
+    // just change the api from top-headline to crypto the app is under development
     let {data} = await axios.get('https://newsapi.org/v2/top-headlines?country=us&apiKey=5fca490bd4d54b23a7143e2fbab1dea9');
     // eslint-disable-next-line no-lone-blocks
     { /*console.log("news",data);*/ }
