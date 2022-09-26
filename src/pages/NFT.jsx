@@ -1,7 +1,7 @@
 import {React,useState,useEffect} from 'react'
 import { Container, Form, Row, Table, Pagination } from 'react-bootstrap';
 import axios from 'axios';
-import { NFTcoin } from '../Config/api';
+
 
 
 const NFTS = () => {
@@ -10,7 +10,8 @@ const NFTS = () => {
   const [loading, setLoading] = useState(false);
   const [search, setSearch] = useState("");
   const [page, setPage] = useState(1);
-  
+  // add or export a function to Format The currency 
+
 
 }
 
