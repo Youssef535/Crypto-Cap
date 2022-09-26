@@ -12,7 +12,7 @@ const NFTS = () => {
   const [page, setPage] = useState(1);
   // add or export a function to Format The currency 
 
-
+    // i will work on a static web page for the nft due the performance of the app and more cleaner or i will just try an open api 
 }
 
 
