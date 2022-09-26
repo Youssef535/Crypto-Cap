@@ -4,7 +4,10 @@ import axios from 'axios';
 import { NFTcoin } from '../Config/api';
 
 
+const nft = () => {
 
+  const [NFTcoin,setNFT] = useState([]);
+}
 
 
 

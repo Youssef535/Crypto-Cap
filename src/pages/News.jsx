@@ -1,5 +1,5 @@
 import { useState, useEffect, React } from 'react';
-import { Container,Card,Col,Row,Pagination,Button } from 'react-bootstrap';
+import { Container,Card,Col,Row,Button } from 'react-bootstrap';
 import axios from 'axios';
 import Scroll_Top from '../components/Scroll_Top';
 
@@ -8,8 +8,7 @@ import Scroll_Top from '../components/Scroll_Top';
 const News = () => {
 
   const [news, setNews] = useState([]);
-  // Add a Pagination if you changed the api to crypto 
-  const [page, setPage] = useState(1);
+  // Add a Pagination if you changed the api to crypto I REMOVED FOR THE PERFORMANCE
 
   const newsAPI = async () =>{
     // just change the api from top-headline to crypto the app is under development
