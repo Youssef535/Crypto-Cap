@@ -7,7 +7,11 @@ import { NFTcoin } from '../Config/api';
 const NFTS = () => {
 
   const [NFTcoin, setNFT] = useState([]);
+  const [loading, setLoading] = useState(false);
+  const [search, setSearch] = useState("");
+  const [page, setPage] = useState(1);
   
+
 }
 
 
