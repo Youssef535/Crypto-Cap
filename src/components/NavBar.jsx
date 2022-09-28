@@ -30,7 +30,7 @@ const Navigationbar = () => {
               <Navbar.Collapse id="responsive-navbar-nav">
                 <Nav className="me-auto">
                     <Nav.Link as={Link} to="/News">News</Nav.Link>
-                    <Nav.Link as={Link} to="/NFT">NFT</Nav.Link>
+                    <Nav.Link as={Link} to="/Trend">Trending</Nav.Link>
                     <Nav.Link as={Link} to="/Exchange">Exchange</Nav.Link>
                 </Nav>
                 

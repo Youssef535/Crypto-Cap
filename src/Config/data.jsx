@@ -1,3 +1,5 @@
+// USING THIS FOR THE CHART 
+
 export const chartDays = [
   {
     label: "24 Hours",
