@@ -13,3 +13,7 @@ export const TrendingCoins = (currency) =>
 
 export const trending =
   'https://api.coingecko.com/api/v3/search/trending';
+
+// import NFT List BETA COINGECKO API 
+
+export const nfts = 'https://api.coingecko.com/api/v3/nfts/list?order=h24_volume_native_asc&per_page=20&page=20'

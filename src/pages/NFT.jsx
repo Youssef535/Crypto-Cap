@@ -1,20 +1,20 @@
 import {React,useState,useEffect} from 'react'
 import { Container, Form, Row, Table, Pagination } from 'react-bootstrap'
 import axios from 'axios'
-import { trending } from '../Config/api'
+import { nfts } from '../Config/api'
 
 
 const Trend = () => {
 
     
-  const [Trend, SetTrend ] = useState();
+  const [nfts, Setnfts ] = useState();
   const [search, setSearch] = useState("");
   const [page, setPage] = useState(1);
   
 
   return (
     
-    <h1>Trending Coins</h1>
+    <h1>Top NFT in the market</h1>
     
   )
 }
