@@ -1,16 +1,35 @@
 import {React,useState,useEffect} from 'react'
 import { Container, Form, Row, Table, Pagination } from 'react-bootstrap'
 import axios from 'axios'
-import { nfts } from '../Config/api'
+import { nft } from '../Config/api'
 
 
-const Trend = () => {
+const NFT = () => {
 
     
-  const [nfts, Setnfts ] = useState();
+  const [NFTs, SetNFTs ] = useState([]);
   const [search, setSearch] = useState("");
-  const [page, setPage] = useState(1);
-  
+  const [Page, setPage] = useState(1);
+  //  describe the status of async requests
+  const  [Loading, SetLoading] = useState(false);
+
+  const getNFT = async () => {
+    SetLoading(true);
+    const data = await axios.get(nft);
+    SetNFTs(data);
+    SetLoading(false);
+  };
+  console.log(NFTs);
+
+  useEffect(() => {
+    getNFT();
+  },[]);
+
+  const handleChange = () => {
+    return NFTs.filter(NFTs => NFTs.name.toLowerCase().includes(search)) || [];
+  }
+  // maybe i will added a logic for the search bars still working on it 
+
 
   return (
     
@@ -19,4 +38,4 @@ const Trend = () => {
   )
 }
 
-export default Trend;
+export default NFT;
