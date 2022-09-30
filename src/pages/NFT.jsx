@@ -19,7 +19,7 @@ const NFT = () => {
     SetNFTs(data);
     SetLoading(false);
   };
-  //console.log(NFTs);
+  console.log(NFTs);
 
   useEffect(() => {
     getNFT();
@@ -33,8 +33,8 @@ const NFT = () => {
 
   return (
     
-    <h1>Top NFT in the market</h1>
-    // didn't found a cool API but it shoul be cool 
+    <h1>Trending collections</h1>
+    
     
   )
 }
