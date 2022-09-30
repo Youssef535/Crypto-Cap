@@ -3,7 +3,6 @@ import {Row,Col,Container,Form,Button} from 'react-bootstrap';
 import img from './logo.jpg';
 
 
-
 const Banner = () => {
   return (
     <div >
@@ -31,8 +30,5 @@ const Banner = () => {
       </Container>
     </div>
   );
-    
-  
 }
-
 export default Banner

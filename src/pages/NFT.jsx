@@ -28,14 +28,11 @@ const NFT = () => {
   const handleChange = () => {
     return NFTs.filter(NFTs => NFTs.name.toLowerCase().includes(search)) || [];
   }
-  // maybe i will added a logic for the search bars still working on it 
-
+  
 
   return (
     
     <h1>Trending collections</h1>
-    
-    
   )
 }
 

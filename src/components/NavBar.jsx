@@ -5,8 +5,6 @@ import img from '../assets/images/logo.jpg'
 import { CryptoState } from '../Context';
 
 
-
-
 const Navigationbar = () => {
   const {currency, setCurrency } = CryptoState();
   
@@ -50,10 +48,6 @@ const Navigationbar = () => {
         </>
         
       </div>
-    
   );
 }
-
-
-
 export default Navigationbar;

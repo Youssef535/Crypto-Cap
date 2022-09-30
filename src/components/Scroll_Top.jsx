@@ -9,9 +9,7 @@ export default function App() {
 
   return (
     <div>
-
       <div style={{height: '5rem'}} />
-
       <button
         onClick={() => {
           window.scrollTo({top: 0, left: 0, behavior: 'smooth'});
