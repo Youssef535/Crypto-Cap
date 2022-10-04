@@ -17,4 +17,4 @@ export const trending =
 // import NFT List BETA COINGECKO API 
 
 
-export const nft = 'https://api.coingecko.com/api/v3/nfts/list?order=h24_volume_native_asc&per_page=10&page=10'
+export const nft =  'https://api.coingecko.com/api/v3/nfts/list?order=h24_volume_native_asc&per_page=10&page=10';
