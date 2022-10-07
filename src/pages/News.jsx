@@ -32,7 +32,6 @@ const News = () => {
        {/* display all trending news  */}
       <Container>
         <Row>
-        
           {news.map(news => (
             <Col key={news.title} md={4}>
               <Card className='bg-dark ' style={{ margin:"10px", cursor:"pointer"}}>
