@@ -11,7 +11,7 @@ const NFT = () => {
   //const [Page, setPage] = useState(1);
   
   return (
-    // Build a static webpage API won't work
+    // So my problem now is to work on the SEO tags after that i need to find an NFT API AND fetch it to my app 
     <>
     <h1 className='p-4'>Trending collections</h1>
     <Container>
