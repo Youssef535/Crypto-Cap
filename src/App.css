@@ -87,7 +87,7 @@ body {
   text-decoration: none;
 }
 
-@media screen and (max-width: 720px) {
+@media screen and (max-width: 720px) { /* Working on the css and mobile first */
   .hide-mobile {
       display: none;
   }
@@ -95,8 +95,8 @@ body {
 
 @media screen and (max-width: 720px) {
   .img-1 {
-      padding: 0;
-      width: 250px;
+    padding:0;
+    width: 250px;
   }
 }
 
@@ -105,3 +105,4 @@ body {
       padding-bottom: 70px;
   }
 }
+
