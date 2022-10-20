@@ -44,7 +44,7 @@ body {
   font-weight: 700;
   line-height: 1.5;
   color: rgb(157, 155, 153);
-  padding-top: 120px;
+  padding-top: 60px;       /*120 to 60px*/
 }
 
 .Heading2 {
@@ -104,7 +104,7 @@ body {
 
   @media screen and (max-width: 720px) {
     .Col-1 {
-        padding-bottom: 70px;
+        padding-bottom: 30px;
     }
   }
 

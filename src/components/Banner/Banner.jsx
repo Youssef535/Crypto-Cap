@@ -6,9 +6,10 @@ import img from './logo.jpg';
 const Banner = () => {  // Working on styling more the app by adding Bootstrap class
   return (
     <div >
-        <Container fluid="md">
+        <Container fluid="md"> 
+        
           <Row>
-            <Col md={7} className='Col-1'>
+            <Col md={6} className='Col-1'>
             <h1 className='Heading1'>Jump start your crypto portfolio</h1>
             <h3 className='Heading2'>Coin Cap is the easiest place to buy and sell cryptocurrency. Sign up and get started today.</h3>
           <Form.Control  className='input-1'
@@ -19,10 +20,11 @@ const Banner = () => {  // Working on styling more the app by adding Bootstrap c
         /> 
           <Button as="input" type="submit" value="Get Started" className='submit-btn' />
           </Col>
-          <Col>
-          <img src={img} className='img-1' alt=""/>
+          <Col md={6} className='pt-4'>
+          <img  src={img} className='img-1' alt=""/>
         </Col>
       </Row>
+      
       </Container>
     </div>
   );
