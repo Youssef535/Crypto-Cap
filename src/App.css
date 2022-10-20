@@ -35,10 +35,9 @@ body {
   cursor: pointer;
 }
 
-.Col-1 {
+/*.Col-1 {
   padding-bottom: 110px;
-
-}
+}*/
 .Heading1 {
   font-size: 62px;
   font-weight: 700;
@@ -66,7 +65,7 @@ body {
   padding: 15px;
 }
 .img-1 {  /* max-width: 100%, height:auto */
-  padding: 100px 0 0 90px;
+  padding: 0 0 0 90px;
   cursor: pointer;
   width: 350px;
 }
@@ -108,3 +107,4 @@ body {
     }
   }
 
+  
