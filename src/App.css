@@ -65,10 +65,10 @@ body {
   margin-top: 20px;
   padding: 15px;
 }
-.img-1 {
-  padding: 150px 0 0 90px;
+.img-1 {  /* max-width: 100%, height:auto */
+  padding: 100px 0 0 90px;
   cursor: pointer;
-  width: 400px;
+  width: 350px;
 }
 .text-center {
   color: rgb(157, 155, 153);
@@ -93,16 +93,18 @@ body {
   }
 }
 
-@media screen and (max-width: 720px) {
+@media screen and (max-width: 480px) {
   .img-1 {
-    padding:0;
-    width: 250px;
+    display: none;
   }
 }
+/* padding:0;
+  width: 250px;
+  */
 
-@media screen and (max-width: 720px) {
-  .Col-1 {
-      padding-bottom: 70px;
+  @media screen and (max-width: 720px) {
+    .Col-1 {
+        padding-bottom: 70px;
+    }
   }
-}
 
