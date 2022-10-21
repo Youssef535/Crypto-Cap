@@ -5,9 +5,8 @@ import img from './logo.jpg';
 
 const Banner = () => {  // Working on styling more the app by adding Bootstrap class
   return (
-    <div >
+    <>
         <Container fluid="md"> 
-        
           <Row>
             <Col md={6} className='Col-1'>
             <h1 className='Heading1'>Jump start your crypto portfolio</h1>
@@ -21,12 +20,11 @@ const Banner = () => {  // Working on styling more the app by adding Bootstrap c
           <Button as="input" type="submit" value="Get Started" className='submit-btn' />
           </Col>
           <Col md={6} className='pt-5'>
-          <img  src={img} className='pt-5 img-1' alt=""/>
+          <img  src={img} className='pt-5  img-1' alt=""/>
         </Col>
       </Row>
-      
       </Container>
-    </div>
+    </>
   );
 }
 export default Banner
