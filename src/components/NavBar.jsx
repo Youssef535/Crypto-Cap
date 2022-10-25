@@ -10,7 +10,6 @@ const Navigationbar = () => {
   
   return (
       <div>
-        
         <>
           <Navbar  className='navBar' bg="dark" variant="dark" expand="sm"  >
             <Container>
@@ -18,11 +17,11 @@ const Navigationbar = () => {
               <img
                   alt=""
                   src={img}
-                  width="30"
-                  height="30"
-                  className="d-inline-block align-top"
+                  width="25"
+                  height="25"
+                  
             />
-            Coin Cap
+            Crypto Cap
               </Navbar.Brand>
                 <Navbar.Toggle aria-controls="responsive-navbar-nav" />
               <Navbar.Collapse id="responsive-navbar-nav">
@@ -46,7 +45,6 @@ const Navigationbar = () => {
             </Container>
           </Navbar>
         </>
-        
       </div>
   );
 }
