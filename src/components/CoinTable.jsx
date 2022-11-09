@@ -8,7 +8,6 @@ export const numberWithCommas = (coin) => {
   return coin.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
 }
 
-
 const CoinTable = () => {
 
 const  [coins, setCoins] = useState([]);
@@ -25,14 +24,12 @@ const formatCurrency = (value) => {
   }).format(value);
 }
 
-
   const getCoins = async () => {
     setLoading(true);
       const { data } = await axios.get(CoinList(currency));
       setCoins(data);
     setLoading(false);
   };
-
 
   useEffect(() => {
     getCoins();
@@ -41,7 +38,6 @@ const formatCurrency = (value) => {
   const handleChange = () => {
     return coins.filter(coin => coin.name.toLowerCase().includes(search)) || [];
   }
-
 
   return (
       <>

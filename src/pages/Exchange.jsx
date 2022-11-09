@@ -3,8 +3,6 @@ import { Container, Form, Pagination, Table, Col, Row } from 'react-bootstrap'
 import { Axios } from 'axios'
 
 
-// 
-
 
 const Exchange = () => {
   return (
