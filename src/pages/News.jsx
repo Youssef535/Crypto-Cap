@@ -3,8 +3,6 @@ import { Container,Card,Col,Row,Button } from 'react-bootstrap';
 import axios from 'axios';
 import Scroll_Top from '../components/Scroll_Top';
 
-
-
 const News = () => {
 
   const [news, setNews] = useState([]);
@@ -23,8 +21,6 @@ const News = () => {
     //componentDidMount
     newsAPI();
   }, [])
-
-  
 
   return (
     <div>
@@ -51,12 +47,8 @@ const News = () => {
           </Row>
           {/* Working on the pagination */}
       </Container>
-      
       <Scroll_Top />
-
     </div>  
-
   )
 }
-
 export default News
