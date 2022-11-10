@@ -100,9 +100,7 @@ const Coin = () => {
                         <div className='row'>
                           <h4>Circulating Supply</h4>
                           {coin?.market_data.circulating_supply.toLocaleString()}
-                          
                         </div>
-                    
                   </div>
                 </div>
               </div>
