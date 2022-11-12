@@ -15,7 +15,7 @@ const [news, setNews] = useState([]);
     // Please Visit newsapi.org
     let {data} = await axios.get('https://newsapi.org/v2/top-headlines?country=us&apiKey=5fca490bd4d54b23a7143e2fbab1dea9');
     
-    { /*console.log("news",data);*/ }
+    { /*console.log(data);*/ }
     setNews(data.articles);
   }
 
