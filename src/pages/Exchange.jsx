@@ -6,10 +6,7 @@ const Exchange = () => {
 const [exchanges, SetExchanges] = useState([]);
 const [loading, setLoading] = useState(false);
 const [page, setPage] = useState(1); 
-// const api = 'https://api.coincap.io/v2/exchanges';
-
 const [news, setNews] = useState([]);  
-
   
   const newsAPI = async () =>{
     
@@ -19,17 +16,14 @@ const [news, setNews] = useState([]);
     { /*console.log(data);*/ }
     setNews(data.articles);
   }
-
   useEffect(() => {
     //componentDidMount
     newsAPI();
-  }, [])
-
-
+  }, []);
   return (
     <h1 className='p-4'>Exchange Market Rate </h1>
     
   )
 }
-// Working on performance especially when react render the component {nesting, parent, child}
+
 export default Exchange
