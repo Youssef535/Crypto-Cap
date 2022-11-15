@@ -8,7 +8,7 @@ const [loading, setLoading] = useState(false);
 const [page, setPage] = useState(1); 
 // const api = 'https://api.coincap.io/v2/exchanges';
 
-const [news, setNews] = useState([]);  // found the api
+const [news, setNews] = useState([]);  
 
   
   const newsAPI = async () =>{
