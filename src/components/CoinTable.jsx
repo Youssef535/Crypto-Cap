@@ -50,8 +50,6 @@ const formatCurrency = (value) => {
             onChange={(e) => setSearch(e.target.value)}
         /> 
       </Row>
-
-      
         <Table responsive  striped bordered hover variant="dark" className='tab'>
           <thead>
             <tr>
