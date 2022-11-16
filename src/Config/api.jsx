@@ -18,5 +18,4 @@ export const trending =
 
 export const nft =  'https://api.coingecko.com/api/v3/nfts/list?order=h24_volume_native_asc&per_page=10&page=10'; // 404
 // try to work with coingecko api for the exchange
-
-// export const ExchangeList =  'https://api.coincap.io/v2/exchanges'; // success 200 */
+*/
