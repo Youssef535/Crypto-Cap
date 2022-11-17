@@ -1,73 +1,140 @@
-# Getting Started with Create React App
+<div id="top"></div>
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+<!-- PROJECT LOGO -->
+<br />
+<div align="center">
 
-## Available Scripts
+  <a href="https://github.com/azizbecha/shibhouse">
+    <img src="https://user-images.githubusercontent.com/63454940/168051960-7da5c959-07f7-4fbb-be91-53e42054cc56.png" alt="Logo" width="130" height="250">
+  </a>
 
-In the project directory, you can run:
+  <h3 align="center">Shibhouse</h3>
 
-### `npm start`
+  <p align="center">
+    Re-taking voice conversations to the moon 🚀
+    <br />
+    <a href="https://github.com/azizbecha/shibhouse"><strong>Explore the docs »</strong></a>
+    <br />
+    <br />
+    <a href="https://shibhouse.tv">View Demo</a>
+    ·
+    <a href="https://github.com/azizbecha/shibhouse/issues">Report Bug</a>
+    ·
+    <a href="https://github.com/azizbecha/shibhouse/issues">Request Feature</a>
+  </p>
+  
+  [![Contributors][contributors-shield]][contributors-url]
+  [![Forks][forks-shield]][forks-url]
+  [![Stargazers][stars-shield]][stars-url]
+  [![Issues][issues-shield]][issues-url]
+  [![MIT License][license-shield]][license-url]
+</div>
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+<!-- TABLE OF CONTENTS -->
+<details>
+  <summary>Table of Contents</summary>
+  <ol>
+    <li>
+      <a href="#about-the-project">About The Project</a>
+      <ul>
+        <li><a href="#built-with">Built With</a></li>
+      </ul>
+    </li>
+    <li>
+      <a href="#structure">Structure</a>
+    </li>
+    <li>
+      <a href="#getting-started">Getting Started</a>
+      <ul>
+        <li><a href="#installation">Installation & usage</a></li>
+      </ul>
+    </li>
+    <li><a href="#contributing">Contributing</a></li>
+    <li><a href="#license">License</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ol>
+</details>
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+<!-- ABOUT THE PROJECT -->
+## About The Project
+![image](https://user-images.githubusercontent.com/63454940/196781985-bbddadb9-0fdb-4aae-a780-51bf5bfeffe2.png)
 
-### `npm test`
+Shibhouse is a clone of Dogehouse which is a clone of Clubhouse trying to re-take voice conversations to the moon.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### Built With
 
-### `npm run build`
+Big shout out to the creators of those tools
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+* [Next.js](https://nextjs.org/)
+* [React.js](https://reactjs.org/)
+* [React Native](https://reactnative.dev)
+* [Electron.js](htttps://electronjs.org)
+* [Tailwind CSS](https://tailwindcss.com)
+* [Firebase](https://firebase.google.com)
+* [React Icons](https://react-icons.github.io/)
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## Structure
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+| Codebase              |      Description          |
+| :-------------------- | :-----------------------: |
+| [pixie](pixie)        |   Next.js frontend        |
+| [poppy](poppy)        |   React Native App        |
+| [rina](rina)          |   Electron Wrapper        |
 
-### `npm run eject`
+<!-- GETTING STARTED -->
+## Getting Started
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!** 
+To install the project in your machine, please follow the instructions below:
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+### Install & usage
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+Clone the repository
+  ```sh
+  git clone https://github.com/azizbecha/shibhouse.git
+  ```
+  
+`NOTE` The project is divided into 2 parts which are: 
+- Pixie: Which is the Next.JS frontend. Here are the <a href="https://github.com/azizbecha/shibhouse/blob/main/pixie/README.md">docs</a>.
+- Poppy: Which is the React Native app. Here are the <a href="https://github.com/azizbecha/shibhouse/blob/main/poppy/README.md">docs</a>.
+- Rina: Which is the Electron Wrapper. Here are the <a href="https://github.com/azizbecha/shibhouse/blob/main/rina/README.md">docs</a>.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+<!-- CONTRIBUTING -->
+## Contributing
 
-## Learn More
+**Shibhouse** is open-source and open to contributors. We apperciate all of your efforts making Shibhouse a reliable environment.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+If you have a suggestion that would make this better, please fork the repo and create a pull request. You can also simply open an issue with the tag "enhancement".
+Don't forget to give the project a star! Thanks again!
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+1. Fork the Project
+3. Commit your Changes (`git commit -m 'Add some AmazingFeature'`)
+4. Push to the Branch (`git push`)
+5. Open a Pull Request with adding a feature explaining to make it easy to understand
 
-### Code Splitting
+<!-- LICENSE -->
+## License
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+Distributed under the MIT License. See `LICENSE.md` for more information.
 
-### Analyzing the Bundle Size
+<!-- CONTACT -->
+## Contact
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+Aziz Becha - [@azizbechaa](https://twitter.com/azizbechaa) - aziz07becha@gmail.com
 
-### Making a Progressive Web App
+Project Link: [https://github.com/azizbecha/shibhouse](https://github.com/azizbecha/shibhouse)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+[contributors-shield]: https://img.shields.io/github/contributors/azizbecha/shibhouse.svg?style=for-the-badge
+[contributors-url]: https://github.com/azizbecha/shibhouse/graphs/contributors
+[forks-shield]: https://img.shields.io/github/forks/azizbecha/shibhouse.svg?style=for-the-badge
+[forks-url]: https://github.com/azizbecha/shibhouse/network/members
+[stars-shield]: https://img.shields.io/github/stars/azizbecha/shibhouse.svg?style=for-the-badge
+[stars-url]: https://github.com/azizbecha/shibhouse/stargazers
+[issues-shield]: https://img.shields.io/github/issues/azizbecha/shibhouse.svg?style=for-the-badge
+[issues-url]: https://github.com/azizbecha/shibhouse/issues
+[license-shield]: https://img.shields.io/github/license/azizbecha/shibhouse.svg?style=for-the-badge
+[license-url]: https://github.com/azizbecha/shibhouse/blob/master/LICENSE.md
 
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
-
-### I will deploy the app on netlify Please enjoy
+## Thanks
+1. <a href='https://github.com/CortexTN'>@CortexTN</a> for the logo and your improvements.
+2. <a href='https://instagram.com/zeriab666'>Zeriab</a> for paying the hosting costs
 
