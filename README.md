@@ -4,30 +4,24 @@
 <br />
 <div align="center">
 
-  <a href="https://github.com/azizbecha/shibhouse">
-    <img src="https://user-images.githubusercontent.com/63454940/168051960-7da5c959-07f7-4fbb-be91-53e42054cc56.png" alt="Logo" width="130" height="250">
+  <a href="https://github.com/Youssef535/Crypto-Cap">
+    <img src="https://github.com/Youssef535/Crypto-Cap/blob/master/src/assets/images/logo.jpg" alt="Logo" width="130" height="150">
   </a>
 
-  <h3 align="center">Shibhouse</h3>
+  <h3 align="center">Crypto Cap</h3>
 
   <p align="center">
-    Re-taking voice conversations to the moon 🚀
+    The global crypto market cap
     <br />
-    <a href="https://github.com/azizbecha/shibhouse"><strong>Explore the docs »</strong></a>
+    <a href="https://github.com/Youssef535/Crypto-Cap"><strong>Explore the docs »</strong></a>
     <br />
     <br />
-    <a href="https://shibhouse.tv">View Demo</a>
+    <a href="">View Demo</a>
     ·
-    <a href="https://github.com/azizbecha/shibhouse/issues">Report Bug</a>
+    <a href='https://github.com/Youssef535/Crypto-Cap/issues'>Report Bug</a>
     ·
-    <a href="https://github.com/azizbecha/shibhouse/issues">Request Feature</a>
+    <a href="https://github.com/Youssef535/Crypto-Cap/pulls">Request Feature</a>
   </p>
-  
-  [![Contributors][contributors-shield]][contributors-url]
-  [![Forks][forks-shield]][forks-url]
-  [![Stargazers][stars-shield]][stars-url]
-  [![Issues][issues-shield]][issues-url]
-  [![MIT License][license-shield]][license-url]
 </div>
 
 <!-- TABLE OF CONTENTS -->
@@ -57,29 +51,21 @@
 
 <!-- ABOUT THE PROJECT -->
 ## About The Project
-![image](https://user-images.githubusercontent.com/63454940/196781985-bbddadb9-0fdb-4aae-a780-51bf5bfeffe2.png)
+![Screenshot (417)](https://user-images.githubusercontent.com/82522735/202430917-29623ee3-dcb3-48f4-acb3-24f2614e0eea.png)
 
-Shibhouse is a clone of Dogehouse which is a clone of Clubhouse trying to re-take voice conversations to the moon.
+
+Crypto Cap is a clone of CoinCap  trying to make it a better version.
 
 ### Built With
 
 Big shout out to the creators of those tools
 
-* [Next.js](https://nextjs.org/)
+* [Helmet](https://www.npmjs.com/package/react-helmet)
 * [React.js](https://reactjs.org/)
-* [React Native](https://reactnative.dev)
-* [Electron.js](htttps://electronjs.org)
-* [Tailwind CSS](https://tailwindcss.com)
+* [Bootstrap 5](https://react-bootstrap.netlify.app/)
 * [Firebase](https://firebase.google.com)
 * [React Icons](https://react-icons.github.io/)
 
-## Structure
-
-| Codebase              |      Description          |
-| :-------------------- | :-----------------------: |
-| [pixie](pixie)        |   Next.js frontend        |
-| [poppy](poppy)        |   React Native App        |
-| [rina](rina)          |   Electron Wrapper        |
 
 <!-- GETTING STARTED -->
 ## Getting Started
@@ -90,18 +76,13 @@ To install the project in your machine, please follow the instructions below:
 
 Clone the repository
   ```sh
-  git clone https://github.com/azizbecha/shibhouse.git
+  git clone https://github.com/Youssef535/Crypto-Cap.git
   ```
   
-`NOTE` The project is divided into 2 parts which are: 
-- Pixie: Which is the Next.JS frontend. Here are the <a href="https://github.com/azizbecha/shibhouse/blob/main/pixie/README.md">docs</a>.
-- Poppy: Which is the React Native app. Here are the <a href="https://github.com/azizbecha/shibhouse/blob/main/poppy/README.md">docs</a>.
-- Rina: Which is the Electron Wrapper. Here are the <a href="https://github.com/azizbecha/shibhouse/blob/main/rina/README.md">docs</a>.
-
 <!-- CONTRIBUTING -->
 ## Contributing
 
-**Shibhouse** is open-source and open to contributors. We apperciate all of your efforts making Shibhouse a reliable environment.
+**Crypto Cap** is open-source and open to contributors. We apperciate all of your efforts making Crypto Cap a reliable environment.
 
 If you have a suggestion that would make this better, please fork the repo and create a pull request. You can also simply open an issue with the tag "enhancement".
 Don't forget to give the project a star! Thanks again!
@@ -119,22 +100,10 @@ Distributed under the MIT License. See `LICENSE.md` for more information.
 <!-- CONTACT -->
 ## Contact
 
-Aziz Becha - [@azizbechaa](https://twitter.com/azizbechaa) - aziz07becha@gmail.com
+Youssef Soltani - [@YoussefSoltani](https://twitter.com/Youssef60459694) - youssefsoltani53@yahoo.com
 
-Project Link: [https://github.com/azizbecha/shibhouse](https://github.com/azizbecha/shibhouse)
+Project Link: [(https://github.com/Youssef535/Crypto-Cap)](https://github.com/Youssef535/Crypto-Cap)
 
-[contributors-shield]: https://img.shields.io/github/contributors/azizbecha/shibhouse.svg?style=for-the-badge
-[contributors-url]: https://github.com/azizbecha/shibhouse/graphs/contributors
-[forks-shield]: https://img.shields.io/github/forks/azizbecha/shibhouse.svg?style=for-the-badge
-[forks-url]: https://github.com/azizbecha/shibhouse/network/members
-[stars-shield]: https://img.shields.io/github/stars/azizbecha/shibhouse.svg?style=for-the-badge
-[stars-url]: https://github.com/azizbecha/shibhouse/stargazers
-[issues-shield]: https://img.shields.io/github/issues/azizbecha/shibhouse.svg?style=for-the-badge
-[issues-url]: https://github.com/azizbecha/shibhouse/issues
-[license-shield]: https://img.shields.io/github/license/azizbecha/shibhouse.svg?style=for-the-badge
-[license-url]: https://github.com/azizbecha/shibhouse/blob/master/LICENSE.md
 
-## Thanks
-1. <a href='https://github.com/CortexTN'>@CortexTN</a> for the logo and your improvements.
-2. <a href='https://instagram.com/zeriab666'>Zeriab</a> for paying the hosting costs
+
 
