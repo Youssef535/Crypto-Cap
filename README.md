@@ -65,6 +65,7 @@ Big shout out to the creators of those tools
 * [Bootstrap 5](https://react-bootstrap.netlify.app/)
 * [Firebase](https://firebase.google.com)
 * [React Icons](https://react-icons.github.io/)
+* [React Router v6](https://reactrouter.com/)
 
 
 <!-- GETTING STARTED -->
