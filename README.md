@@ -55,6 +55,7 @@
 
 
 Crypto Cap is a clone of CoinCap and it's a light weight web app  trying to make it a better version.
+You can login to your account and recieve last notifications and last crypto, NFT news.
 
 ### Built With
 
