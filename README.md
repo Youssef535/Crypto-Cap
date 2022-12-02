@@ -61,7 +61,7 @@ You can login to your account and recieve last notifications and last crypto, NF
 
 Big shout out to the creators of those tools
 
-* [Helmet](https://www.npmjs.com/package/react-helmet)
+* [Helmet](https://www.npmjs.com/package/react-helmet) [SEO]
 * [React.js](https://reactjs.org/)
 * [Bootstrap 5](https://react-bootstrap.netlify.app/)
 * [Firebase](https://firebase.google.com)
