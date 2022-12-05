@@ -27,7 +27,7 @@ const [page, setPage] = useState(1);
     <Container>
     <h3 className='p-4'>Top Crypto Exchanges Ranked by Trust Score </h3>
     <p className='text-secondary'>As of today, we track 541 crypto exchanges with a total 24h trading volume of $65 Billion  Currently, the 3 largest cryptocurrency exchanges are Binance, Coinbase Exchange, and KuCoin.</p>
-    <Table responsive  striped bordered hover variant="dark" className='tab'> 
+    <Table responsive  striped  hover variant="dark" className='tab'> 
       <thead>
         <tr>
           <th>Rank</th>
@@ -37,7 +37,12 @@ const [page, setPage] = useState(1);
         </tr>
       </thead>
       <tbody>
-        
+        <tr>
+          <td>1</td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
       </tbody>
     </Table>
     </Container>
