@@ -13,7 +13,7 @@ const [page, setPage] = useState(1);
     const fetchExchanges = async () => {
       setLoading(true);
         const  data  = await axios.get(exchangesAPI);
-    {  console.log(data); }
+    {  console.log(data); } // for the testing
         SetExchanges(data);
       setLoading(false);
     };
@@ -21,7 +21,7 @@ const [page, setPage] = useState(1);
     useEffect(() => {
       fetchExchanges();
     },[]);
-  
+    
   return (
     <>
     <Container>
@@ -38,8 +38,14 @@ const [page, setPage] = useState(1);
       </thead>
       <tbody>
         <tr>
-          <td>1</td>
-          <td></td>
+          <td>
+            <img
+            src={exchanges.image}
+            alt={exchanges.id}
+            style={{width: 35, height: 35, margin:5, padding:1}}
+            ></img>
+          </td>
+          <td>{exchanges.name}</td>
           <td></td>
           <td></td>
         </tr>
@@ -48,6 +54,6 @@ const [page, setPage] = useState(1);
     </Container>
     </>
   )
-}
 
+  }
 export default Exchange

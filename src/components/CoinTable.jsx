@@ -35,9 +35,7 @@ const formatCurrency = (value) => {
     getCoins();
   },[currency]);
 
-  const handleChange = () => {
-    return coins.filter(coin => coin.name.toLowerCase().includes(search)) || [];
-  }
+  
 
   return (
       <>
@@ -60,7 +58,6 @@ const formatCurrency = (value) => {
             </tr>
           </thead>
           <tbody>
-          
               {handleChange()
                 .slice((page - 1) * 10, page * 10) 
                 .map(coin => (

@@ -1,4 +1,4 @@
-// USING THIS FOR THE CHART 
+// working on the chat and other many features
 
 export const chartDays = [
   {
