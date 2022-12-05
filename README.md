@@ -54,17 +54,19 @@
 ![Screenshot (417)](https://user-images.githubusercontent.com/82522735/202430917-29623ee3-dcb3-48f4-acb3-24f2614e0eea.png)
 
 
-Crypto Cap is a clone of CoinCap  trying to make it a better version.
+Crypto Cap is a clone of CoinCap and it's a light weight web app  trying to make it a better version.
+You can login to your account and recieve last notifications and last crypto, NFT news.
 
 ### Built With
 
 Big shout out to the creators of those tools
 
-* [Helmet](https://www.npmjs.com/package/react-helmet)
+* [Helmet](https://www.npmjs.com/package/react-helmet) [SEO]
 * [React.js](https://reactjs.org/)
 * [Bootstrap 5](https://react-bootstrap.netlify.app/)
 * [Firebase](https://firebase.google.com)
 * [React Icons](https://react-icons.github.io/)
+* [React Router v6](https://reactrouter.com/)
 
 
 <!-- GETTING STARTED -->
