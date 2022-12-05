@@ -13,7 +13,7 @@ const [page, setPage] = useState(1);
     const fetchExchanges = async () => {
       setLoading(true);
         const  data  = await axios.get(exchangesAPI);
-    { /* console.log(data); */}
+    {  console.log(data); }
         SetExchanges(data);
       setLoading(false);
     };
@@ -28,7 +28,17 @@ const [page, setPage] = useState(1);
     <h3 className='p-4'>Top Crypto Exchanges Ranked by Trust Score </h3>
     <p className='text-secondary'>As of today, we track 541 crypto exchanges with a total 24h trading volume of $65 Billion  Currently, the 3 largest cryptocurrency exchanges are Binance, Coinbase Exchange, and KuCoin.</p>
     <Table responsive  striped bordered hover variant="dark" className='tab'> 
-      
+      <thead>
+        <tr>
+          <th>Rank</th>
+          <th>Name</th>
+          <th>24h Volume</th>
+          <th>Country</th>
+        </tr>
+      </thead>
+      <tbody>
+        
+      </tbody>
     </Table>
     </Container>
     </>
