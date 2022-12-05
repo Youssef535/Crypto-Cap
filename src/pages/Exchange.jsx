@@ -13,7 +13,7 @@ const [page, setPage] = useState(1);
     const fetchExchanges = async () => {
       setLoading(true);
         const  data  = await axios.get(exchangesAPI);
-        { /*console.log(data); */}
+    { /* console.log(data); */}
         SetExchanges(data);
       setLoading(false);
     };

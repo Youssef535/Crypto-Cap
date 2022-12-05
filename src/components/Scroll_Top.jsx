@@ -1,9 +1,9 @@
 import {useEffect} from 'react';
 import { BsFillArrowUpSquareFill } from "react-icons/bs";
+// You can import scroll top to other component it will render only one time
 
 export default function App() {
   useEffect(() => {
-    
     window.scrollTo({top: 0, left: 0, behavior: 'smooth'});
   }, []);
 
@@ -16,7 +16,7 @@ export default function App() {
         }}
         style={{
           position: 'fixed',
-          padding: '4px 15px',
+          padding: '4px 12px',
           fontSize: '20px',
           bottom: '30px',
           right: '40px',
