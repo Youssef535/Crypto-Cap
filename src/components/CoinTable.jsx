@@ -4,9 +4,10 @@ import axios from 'axios'
 import { CoinList } from '../Config/api';
 import { CryptoState } from '../Context';
 import { Container, Form, Row, Table, Pagination } from 'react-bootstrap';
+
 export const numberWithCommas = (coin) => {
   return coin.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
-}
+}  
 
 const CoinTable = () => {
 
@@ -34,8 +35,10 @@ const formatCurrency = (value) => {
   useEffect(() => {
     getCoins();
   },[currency]);
+  const handleChange = () => {
+    return coins.filter(coin => coin.name.toLowerCase().includes(search)) || [];
+  }
 
-  
 
   return (
       <>

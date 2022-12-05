@@ -38,14 +38,8 @@ const [page, setPage] = useState(1);
       </thead>
       <tbody>
         <tr>
-          <td>
-            <img
-            src={exchanges.image}
-            alt={exchanges.id}
-            style={{width: 35, height: 35, margin:5, padding:1}}
-            ></img>
-          </td>
-          <td>{exchanges.name}</td>
+          <td>{exchanges?.rank}</td>
+          <td></td>
           <td></td>
           <td></td>
         </tr>
