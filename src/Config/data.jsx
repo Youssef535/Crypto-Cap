@@ -1,4 +1,4 @@
-// working on the chat and other many features
+// This data is for the chart ( working on it )
 
 export const chartDays = [
   {
