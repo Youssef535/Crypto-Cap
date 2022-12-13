@@ -5,6 +5,7 @@ import { CoinList } from '../Config/api';
 import { CryptoState } from '../Context';
 import { Container, Form, Row, Table, Pagination } from 'react-bootstrap';
 
+
 export const numberWithCommas = (coin) => {
   return coin.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
 }  
@@ -21,7 +22,7 @@ const formatCurrency = (value) => {
   return new Intl.NumberFormat('en-US', {
     style: 'currency',
     currency: currency,
-    minimumFractionDigits: 2
+    minimumFractionDigits: 3
   }).format(value);
 }
 
@@ -100,6 +101,6 @@ const formatCurrency = (value) => {
       </>
   );
 }
-// for the changes
+
 
 export default CoinTable;
