@@ -2,7 +2,6 @@
   "name": "crypto__cap",
   "version": "0.1.0",
   "private": true,
-  "dependencies": {},
   "repository": {
     "type": "git",
     "url": "git+https://github.com/Youssef535/Crypto-Cap"

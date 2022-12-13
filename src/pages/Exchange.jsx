@@ -22,6 +22,8 @@ const [page, setPage] = useState(1);
     useEffect(() => {
       fetchExchanges();
     },[]);
+
+
     
   return (
     <>
@@ -40,7 +42,7 @@ const [page, setPage] = useState(1);
       <tbody>
         {/* a map function here and get all the info from the api */}
         <tr>
-          <td>{exchanges.trust_score_rank}</td>
+          <td></td>
           <td></td>
           <td></td>
           <td></td>
