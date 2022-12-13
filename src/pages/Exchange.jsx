@@ -18,6 +18,7 @@ const [page, setPage] = useState(1);
       setLoading(false);
     };
   
+    // Tomorow try to add the search bar and try to consume the api
     useEffect(() => {
       fetchExchanges();
     },[]);
@@ -37,8 +38,9 @@ const [page, setPage] = useState(1);
         </tr>
       </thead>
       <tbody>
+        {/* a map function here and get all the info from the api */}
         <tr>
-          <td>{exchanges?.rank}</td>
+          <td>{exchanges.trust_score_rank}</td>
           <td></td>
           <td></td>
           <td></td>

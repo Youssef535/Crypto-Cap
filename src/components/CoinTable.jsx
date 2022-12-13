@@ -35,10 +35,10 @@ const formatCurrency = (value) => {
   useEffect(() => {
     getCoins();
   },[currency]);
+
   const handleChange = () => {
     return coins.filter(coin => coin.name.toLowerCase().includes(search)) || [];
   }
-
 
   return (
       <>
@@ -62,7 +62,7 @@ const formatCurrency = (value) => {
           </thead>
           <tbody>
               {handleChange()
-                .slice((page - 1) * 10, page * 10) 
+                .slice((page - 1) * 10, page * 15) // see the top 15 coin on the front page 
                 .map(coin => (
                 <tr key={coin.id} 
                 onClick={() => navigate(`/Coin/${coin.id}`)}>
