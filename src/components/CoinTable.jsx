@@ -101,6 +101,4 @@ const formatCurrency = (value) => {
       </>
   );
 }
-
-
 export default CoinTable;
