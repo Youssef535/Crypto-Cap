@@ -1,4 +1,4 @@
-import {useEffect} from 'react';
+import {useEffect, React} from 'react';
 import { BsFillArrowUpSquareFill } from "react-icons/bs";
 // You can import scroll top to other component it will render only one time
 
