@@ -50,26 +50,27 @@
 </details>
 
 <!-- ABOUT THE PROJECT -->
+
 ## About The Project
+
 ![Screenshot (417)](https://user-images.githubusercontent.com/82522735/202430917-29623ee3-dcb3-48f4-acb3-24f2614e0eea.png)
 
-
-Crypto Cap is a clone of CoinCap and it's a light weight web app  trying to make it a better version.
+Crypto Cap is a clone of CoinCap and it's a light weight web app trying to make it a better version.
 You can login to your account and recieve last notifications and last crypto, NFT news.
 
 ### Built With
 
 Big shout out to the creators of those tools
 
-* [Helmet](https://www.npmjs.com/package/react-helmet) [SEO]
-* [React.js](https://reactjs.org/)
-* [Bootstrap 5](https://react-bootstrap.netlify.app/)
-* [Firebase](https://firebase.google.com)
-* [React Icons](https://react-icons.github.io/)
-* [React Router v6](https://reactrouter.com/)
-
+- [Helmet](https://www.npmjs.com/package/react-helmet) [SEO]
+- [React.js](https://reactjs.org/)
+- [Bootstrap 5](https://react-bootstrap.netlify.app/)
+- [Firebase](https://firebase.google.com)
+- [React Icons](https://react-icons.github.io/)
+- [React Router v6](https://reactrouter.com/)
 
 <!-- GETTING STARTED -->
+
 ## Getting Started
 
 To install the project in your machine, please follow the instructions below:
@@ -77,11 +78,13 @@ To install the project in your machine, please follow the instructions below:
 ### Install & usage
 
 Clone the repository
-  ```sh
-  git clone https://github.com/Youssef535/Crypto-Cap.git
-  ```
-  
+
+```sh
+git clone https://github.com/Youssef535/Crypto-Cap.git
+```
+
 <!-- CONTRIBUTING -->
+
 ## Contributing
 
 **Crypto Cap** is open-source and open to contributors. We apperciate all of your efforts making Crypto Cap a reliable environment.
@@ -90,22 +93,20 @@ If you have a suggestion that would make this better, please fork the repo and c
 Don't forget to give the project a star! Thanks again!
 
 1. Fork the Project
-3. Commit your Changes (`git commit -m 'Add some AmazingFeature'`)
-4. Push to the Branch (`git push`)
-5. Open a Pull Request with adding a feature explaining to make it easy to understand
+2. Commit your Changes (`git commit -m 'Add some AmazingFeature'`)
+3. Push to the Branch (`git push`)
+4. Open a Pull Request with adding a feature explaining to make it easy to understand
 
 <!-- LICENSE -->
+
 ## License
 
 Distributed under the MIT License. See `LICENSE.md` for more information.
 
 <!-- CONTACT -->
+
 ## Contact
 
 Youssef Soltani - [@YoussefSoltani](https://twitter.com/Youssef60459694) - youssefsoltani53@yahoo.com
 
 Project Link: [(https://github.com/Youssef535/Crypto-Cap)](https://github.com/Youssef535/Crypto-Cap)
-
-
-
-

@@ -11,7 +11,7 @@
 }
 body {
   background-color: #14161a;
-  color:white;
+  color: white;
   min-height: 100vh;
 }
 /* Custom scrollbar */
@@ -21,11 +21,11 @@ body {
 }
 
 ::-webkit-scrollbar-thumb {
-  background: #00C897;
+  background: #00c897;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: #00C897;
+  background: #00c897;
 }
 
 ::-webkit-scrollbar-track {
@@ -41,8 +41,8 @@ body {
 
 /* Hide scrollbar class for IE, Edge and Firefox */
 .no-scrollbar {
-  -ms-overflow-style: none;  /* IE and Edge */
-  scrollbar-width: none;  /* Firefox */
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
 }
 
 /* still working on styling button onClick  */
@@ -52,7 +52,7 @@ body {
   outline: none;
 }
 .btn {
-  background: #00C897 ;
+  background: #00c897;
   border: none;
   outline: none;
   --bs-btn-active-bg: #019267;
@@ -73,7 +73,7 @@ body {
   font-weight: 700;
   line-height: 1.5;
   color: rgb(157, 155, 153);
-  padding-top: 60px;       /*120 to 60px*/
+  padding-top: 60px; /*120 to 60px*/
 }
 
 .Heading2 {
@@ -94,7 +94,8 @@ body {
   margin-top: 20px;
   padding: 15px;
 }
-.img-1 {  /* max-width: 100%, height:auto */
+.img-1 {
+  /* max-width: 100%, height:auto */
   padding: 0 0 0 90px;
   cursor: pointer;
   width: 350px;
@@ -102,12 +103,11 @@ body {
 .text-center {
   color: rgb(157, 155, 153);
   font-size: 30px;
-  font-weight:700;
+  font-weight: 700;
   padding: 30px;
 }
 .text-center-2 {
   margin-bottom: 30px;
-  
 }
 .tab {
   cursor: pointer;
@@ -116,9 +116,10 @@ body {
   text-decoration: none;
 }
 
-@media screen and (max-width: 720px) { /* Working on the css and mobile first */
+@media screen and (max-width: 720px) {
+  /* Working on the css and mobile first */
   .hide-mobile {
-      display: none;
+    display: none;
   }
 }
 
@@ -131,8 +132,8 @@ body {
   width: 250px;
   */
 
-  @media screen and (max-width: 720px) {
-    .Col-1 {
-        padding-bottom: 30px;
-    }
+@media screen and (max-width: 720px) {
+  .Col-1 {
+    padding-bottom: 30px;
   }
+}
