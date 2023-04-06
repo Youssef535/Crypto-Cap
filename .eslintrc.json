@@ -11,8 +11,8 @@
   },
   "plugins": ["react"],
   "rules": {
-    "indent": "error",
-    "prettier/prettier": "error",
+    "indent": "off",
+    "prettier/prettier": "off",
     "prefer-arrow-callback": "off",
     "arrow-body-style": "off"
   }
