@@ -10,7 +10,7 @@
     "react-bootstrap": "^2.7.0",
     "react-icons": "^4.7.1",
     "react-router-dom": "^6.4.5",
-    "react-scripts": "^2.1.3"
+    "react-scripts": "^5.0.1"
   },
   "repository": {
     "type": "git",
@@ -25,7 +25,10 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "check-format": "perttier --cehck .",
+    "check-link": " eslint . --ext js --extjsx",
+    "format": "prettier --write ."
   },
   "browserslist": {
     "production": [

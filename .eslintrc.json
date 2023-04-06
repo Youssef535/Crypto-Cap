@@ -3,7 +3,7 @@
     "browser": true,
     "es2021": true
   },
-  "extends": ["eslint:recommended", "plugin:react/recommended", "prettier", "plugin:prettierrecommended"],
+  "extends": ["eslint:recommended", "plugin:react/recommended", "prettier", "plugin:prettier/recommended"],
   "overrides": [],
   "parserOptions": {
     "ecmaVersion": "latest",
@@ -13,7 +13,7 @@
   "rules": {
     "indent": "error",
     "prettier/prettier": "error",
-    "arrow-body-style": "off",
-    "prefer-arrow-callback": "off"
+    "prefer-arrow-callback": "off",
+    "arrow-body-style": "off"
   }
 }
