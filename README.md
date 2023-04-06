@@ -65,7 +65,7 @@ Big shout out to the creators of those tools
 - [Helmet](https://www.npmjs.com/package/react-helmet) [SEO]
 - [React.js](https://reactjs.org/)
 - [Bootstrap 5](https://react-bootstrap.netlify.app/)
-- [Firebase](https://firebase.google.com)
+- [Firebase](https://firebase.google.com) (Working on it)
 - [React Icons](https://react-icons.github.io/)
 - [React Router v6](https://reactrouter.com/)
 
