@@ -68,6 +68,7 @@ Big shout out to the creators of those tools
 - [Firebase](https://firebase.google.com) (Working on it)
 - [React Icons](https://react-icons.github.io/)
 - [React Router v6](https://reactrouter.com/)
+- [ ES Lint ] (https://eslint.org/) [fixing problems in code]
 
 <!-- GETTING STARTED -->
 
