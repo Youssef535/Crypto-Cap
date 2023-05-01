@@ -57,7 +57,7 @@
 
 Crypto Cap is a clone of CoinCap and it's a light weight web app trying to make it a better version.
 You can login to your account and recieve last notifications and last crypto, NFT news. </br>
- #### I am currently focused on optimizing the app by minimizing code redundancy and removing third-party libraries. Additionally, my efforts are directed towards resolving theme-related issues and finalizing the entire application and on the lastest visrsion of bootstrap and the SEO.
+ ##### I am currently focused on optimizing the app by minimizing code redundancy and removing third-party libraries. Additionally, my efforts are directed towards resolving theme-related issues and finalizing the entire application and on the lastest visrsion of bootstrap and the SEO.
 ### Built With
 
 Big shout out to the creators of those tools
