@@ -7,6 +7,7 @@
     "bootstrap": "^5.2.3",
     "dompurify": "^2.4.5",
     "react-bootstrap": "^2.7.4",
+    "react-helmet": "^6.1.0",
     "react-icons": "^4.8.0",
     "react-router-dom": "^6.11.1",
     "react-scripts": "^5.0.1"
@@ -15,7 +16,7 @@
     "type": "git",
     "url": "git+https://github.com/Youssef535/Crypto-Cap"
   },
-  "author": "youssef soltani",
+  "author": "Youssef Soltani",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/Youssef535/Crypto-Cap/issues"
@@ -42,6 +43,7 @@
     ]
   },
   "devDependencies": {
+    "@testing-library/react": "^14.0.0",
     "eslint": "^8.39.0",
     "eslint-config-prettier": "^8.8.0",
     "eslint-plugin-prettier": "^4.2.1",
