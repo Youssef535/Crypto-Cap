@@ -56,8 +56,9 @@
 ![Screenshot (417)](https://user-images.githubusercontent.com/82522735/202430917-29623ee3-dcb3-48f4-acb3-24f2614e0eea.png)
 
 Crypto Cap is a clone of CoinCap and it's a light weight web app trying to make it a better version.
-You can login to your account and recieve last notifications and last crypto, NFT news.
-
+You can login to your account and recieve last notifications and last crypto, NFT news. </br>
+ ##### I am currently focused on optimizing the app by minimizing code redundancy and removing third-party libraries. Additionally, my efforts are directed towards resolving theme-related issues and finalizing the entire application and on the lastest visrsion of bootstrap and the SEO. </br>
+ #### Features : Last Trending news, Coins, Exchanges, Swap and more is comming :grinning:
 ### Built With
 
 Big shout out to the creators of those tools
@@ -68,6 +69,7 @@ Big shout out to the creators of those tools
 - [Firebase](https://firebase.google.com) (Working on it)
 - [React Icons](https://react-icons.github.io/)
 - [React Router v6](https://reactrouter.com/)
+- [ES Lint](https://eslint.org/) [fixing problems in code]
 
 <!-- GETTING STARTED -->
 
