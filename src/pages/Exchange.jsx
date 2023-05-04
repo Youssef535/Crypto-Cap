@@ -1,14 +1,12 @@
 import { React, useEffect, useState } from 'react';
-import { Container, Form, Pagination, Table, Col, Row } from 'react-bootstrap';
+import { Container, Table } from 'react-bootstrap';
 import axios from 'axios';
 import { exchangesAPI } from '../Config/api';
 
 const Exchange = () => {
   const [exchanges, SetExchanges] = useState([]);
   const [loading, setLoading] = useState(false);
-  const [page, setPage] = useState(1);
 
-  // Please Visit coingecko api
   const fetchExchanges = async () => {
     setLoading(true);
     const data = await axios.get(exchangesAPI);
@@ -19,7 +17,6 @@ const Exchange = () => {
     setLoading(false);
   };
 
-  // Tomorow try to add the search bar and try to consume the api
   useEffect(() => {
     fetchExchanges();
   }, []);

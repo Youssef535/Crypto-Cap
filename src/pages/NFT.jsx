@@ -1,6 +1,6 @@
 import { React, useState } from 'react';
-import { Container, Form, Pagination } from 'react-bootstrap';
-import axios from 'axios';
+import { Container } from 'react-bootstrap';
+
 
 const NFT = () => {
   const [nfts, SetNFTs] = useState([]);
